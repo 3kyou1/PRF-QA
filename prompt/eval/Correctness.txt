@@ -1,0 +1,11 @@
+query:{query}
+answer:{answer}
+Please evaluate whether the answer is correct using a three-point rating scale.
+Requirements:
+1. Please provide your output in JSON format, following this structure:
+   {{
+     "Correctness": "whether the answer is correct (if correct , output 'agree'; if uncertain, output 'neutral'; if wrong, output 'disagree')"
+     "reasoning": "briefly explain your reasoning for the answer"
+   }}
+2. Please ensure that the answer of "Correctness" is one of: agree, neutral, or disagree.
+3. Please ensure that do not provide any other text outside the JSON string.

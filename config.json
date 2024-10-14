@@ -1,0 +1,6 @@
+{
+    "agent_model": "qwen2:7b-instruct-fp16",
+    "evaluate_model": "command-r-plus:104b-fp16",
+    "ollama_url": "http://localhost:6666",
+    "prompt_path": "/home/hang_su/per-agent/prompt"
+}

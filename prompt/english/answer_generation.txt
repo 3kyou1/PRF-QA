@@ -1,0 +1,4 @@
+query:{query}
+user domain profile:{user_domain_profile}
+user global profile:{user_global_profile}
+You are an expert in {domain}.Please answer this query. Please make sure your answer fits the user's profile.

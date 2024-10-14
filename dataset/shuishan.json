@@ -1,0 +1,864 @@
+{
+  "1": [
+    "HPC和云原生有没有最新的落地案例\n",
+    "Python,C++和JAVA的相通之处和主要区别是什么？\n"
+  ],
+  "2": [
+    "kmeans.labels_什么意思",
+    "最小二乘法线性回归的\n",
+    "用kmean方法聚类\n",
+    "大学生便利店销售额和大学生人数的关系如下面两个列表所示，\n\n列表x是在采集的不同高校大学生人数列表，\n\n列表y是便利店对应的月销售额\n\nx = [5.2, 20.1, 12.6, 26.5, 17.7, 8.7, 11.4, 23.2, 30.3, 9.4]\n\ny=[50, 208, 140, 243, 195, 80, 115, 218, 270, 108]\n\n假设 用y与x关系可以用直线 y=a0 + a1x\n\n1 请用最小二乘法，拟合直线y=a0 + a1x，并预测在校大学生x=10万人时，大学生便利店销售额y的值",
+    "使用datasets.load_boston加载波士顿房价数据",
+    "import numpy as np \n<br>\n已知 x = np.arange(-50,51)\n<br>\n请定义sigmod函数, 利用sigmod函数，生成数组y，y的元素为x的每个元素的sigmod函数值。\n<br>\n绘制x，y折线图",
+    "y=sigmiod(x)与y=[sigmod(item) for item in x]的区别",
+    "from sklearn.linear_model import LogisticRegression\nimport numpy as np\nfrom sklearn.preprocessing import LabelBinarizer\nlb = LabelBinarizer()\nx = [ [158, 64], [170, 86], [183, 84], [191, 80], [155, 49], [163, 59], [180, 67], [158, 54], [170, 67] ]\ny_labels = ['男', '男', '男', '男', '女', '女', '女', '女', '女']\ny_train=lb.fit_transform(y_labels)\nK=3\nknn=LogisticRegression()\nknn.fit(x,y_train)\nx_test = [  [168, 65],  [180, 96],  [160, 52],  [169, 67] ]\npre_test=knn.predict(x_test)\npre_label=lb.inverse_transform(pre_test)有什么语法问题\n"
+  ],
+  "3": [
+    "X = data.iloc[:,0:4]\n",
+    "pandas如何使用",
+    "matplotlib如何使用\n",
+    "sktlearn\n",
+    "什么叫虚实结合\n",
+    "矩阵函数怎么求导",
+    "什么是正定矩阵\n",
+    "梯度递降法的理论依据是什么",
+    "梯度递降法的代码自己怎么写",
+    "次梯度递降法是什么",
+    "正则化技术是什么",
+    "每个变量可能有不同的数量级，如何使不同变量的权重相当\n"
+  ],
+  "4": [
+    "python是啥\n\n",
+    "用python设计程序，累加输入数字之和\n",
+    "<br>\n已知 x = np.arange(-50,51)\n<br>\n请定义sigmod函数, 利用sigmod函数，生成数组y，y的元素为x的每个元素的sigmod函数值。\n<br>\n绘制x，y折线图\n",
+    "## （1）加载鸢尾花数据\n<br>\n使用datasets.load_iris加载鸢尾花数据集\n<br>",
+    "import numpy as np\nimport matplotlib.pyplot as plt\nx=np.arange(-50,51)\ndef sigmoid(x):\n    return 1/(1+np.exp(-x))\ny=sigmoid(x)\nplt.plot(x,y,marker='s')\nplt.show()\n这段代码有问题吗",
+    "为什么逻辑回归不能预测独立连续变量"
+  ],
+  "6": [
+    "如何写if循环\n",
+    "如何写while循环",
+    "如何写猜数游戏",
+    "python学习中常见的问题"
+  ],
+  "7": [
+    "python怎么创建函数",
+    "请解释一下字典和元组的区别",
+    "请写一个python程序输出0-100的奇数",
+    "从字典对象data创建DataFrame，设置索引为labels\n\n输出结果：\n\n  animal  age  visits priority\na    cat  2.5       1      yes\nb    cat  3.0       3      yes\nc  snake  0.5       2       no\nd    dog  NaN       3      yes\ne    dog  5.0       2       no\nf    cat  2.0       3       no\ng  snake  4.5       1       no\nh    cat  NaN       1      yes\ni    dog  7.0       2       no\nj    dog  3.0       1       no",
+    "程序功能：当前目录有一个Excel文件racedata.xlsx，存放着5位选手在2015-2019五个年度的竞赛积分（积分越高表示成绩越好），\n\n行对应年度数据，列为各选手在不同年度的积分。请读入数据文件，按要求完成各项数据处理。\n\n（1）读入5位选手的2015-2019年度竞赛积分\n\n（2）计算各选手在2015-2019五个年度中的最高积分，并按降序排序\n\n（3）输出成绩前三名的的运动员姓名及最高积分及最高积分的年度\n\n提示：Series.idxmax()，可得到Series对象最大值的索引名；DataFrame[列名].idxmax() ，默认可得到DataFrame对象该列最大值对应的行索引名。\n\n程序运行示例如下图所示：\n\n朱迪最高积分:8101出现年度:2016年\n\n郑爽最高积分:7981出现年度:2016年\n\n王珊珊最高积分:7935出现年度:2019年",
+    "程序功能：文件smartphone.xlsx存放了各手机品牌的2020年四个季度在上海的销售数量和销售金额表。 编程实现以下功能：\n\n（1）读入smartphone.xlsx的工作表。\n\n（2）利用groupby函数对数据按“公司”分组。\n\n（3）利用agg聚合函数，统计每个公司在上海全年的销售数量和销售金额。得到聚合结果result\n\n（3）设定result的columns为['年销售数量','年销售金额']。\n\n（4）result的'年销售金额'列按降序排列，并把统计result结果输出到文件‘result.xlsx’。",
+    "请解释一下理论力学中的虚功原理"
+  ],
+  "8": [
+    "字典和列表有什么区别\n",
+    "for和while语句哪个适用范围更广\n",
+    "请设计一个将列表转化为字典的代码",
+    "如何用编程解决鸡兔同笼问题",
+    "训练集、验证集和测试集在使用过程中的顺序是什么？",
+    "什么是过拟合？",
+    "KNN学习是什么学习"
+  ],
+  "9": [
+    "python的作用",
+    "利用python编写计算题\n",
+    "机器学习算法",
+    "k均值算法的编程题目\n",
+    "生成k均值算法编程题目的代码\n",
+    "office基础功能"
+  ],
+  "10": [
+    "请问用read_csv读取文件有哪几种方法\n",
+    "请帮我写一段关于文本处理的代码\n",
+    "#读入数据\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfilename = 'iris.csv'\ndata = pd.read_csv(filename,header=0)\ndata.columns = ['sepal length','sepal width','petal length','petal width','class']\npd.plotting.scatter_matrix(data,diagonal='hist')\n#scatter_matrix 矩阵的对角线是每个特征的直方图，非对角线是两个特征之间分布的关联散点图\nplt.show()\n这段代码哪里错了\n",
+    "请帮我生成一段关于分组求最大值平均值的代码\n",
+    "系统反馈找不到文件怎么办，我也不知道",
+    "哪些数据类型没有顺序",
+    "兰德指数是什么\n",
+    "新生第一课学习了什么",
+    "二进制八进制十进制之间是如何转换的",
+    "MAE，MSE，RMSE如何计算\n",
+    "如何设置精确度，代码",
+    "用setprintoption来实现全局精度的代码",
+    "df.describe()"
+  ],
+  "12": [
+    "会用python编程吗\n",
+    "编一个输出水仙花数的程序\n",
+    "文件studentsInfo.xlsx是5个小组的学生数据，利用pandas提供read_excel函数，读入所有小组的学生数据，完成下面功能：\n1 读入所有小组学生数据\n2 把所有学生数据组合到一个DataFrame对象\n3 删除重复的数据，并把空数据填充为按上一行的数据填充\n4 将同学数据按照“成绩”排序，统计优秀（≥90）和不合格（<60）学生个数。\n5 分组统计不同省份的学生的月平均生活费。"
+  ],
+  "13": [
+    "python的字典怎么用\n",
+    "如何利用python实现手撕K均值算法",
+    "如何利用python绘制正弦函数图像",
+    "构建一数组，按条件修改数组中元素，并计算符合条件的元素个数。\n\n使用arange函数生成一个数值在[0,50)之间的整数ndarray数组，然后将其它转换为5×10的二维数组。\n\n由用户输入一正整数，将数组中所有能被该正整数整除的元素修改为1，其余修改为0（原数组保持不变，生成一新的数组）。\n\n计算这些能被整除的数组元素的个数并输出。",
+    "解释有监督学习，无监督学习，半监督学习分别是什么\n",
+    "如何利用Word进行论文排版\n"
+  ],
+  "14": [
+    "列表如何索引\n",
+    "字典如何排序",
+    "如何绘制散点图\n",
+    "如何绘制饼图",
+    "读入iris.csv文件生成DataFrame对象df，并把鸢尾花的品种数值化处理，把setosa、versicolor、virginica分别数值化为0，1，2，并添加到df的xid列，取列x1,x2,x3,x4创建特征集X，列xid创建标签集Y\n\n   使用sklearn.model_selection模块提供函数train_test_split按训练集与测试集4：1的比例分割特征集X和标签集Y，\n   \n   得到 x_train, x_test, y_train, y_test\n设K=3，创建KNN模型KNeighborsClassifier，并用训练集训练模型，使用测试集，利用模型预测结果，计算accuracy_score并输出\n   \n",
+    "如何计算表格对象某一列数值大于60的值的个数",
+    "编写函数计算斐波那契数列第100项的值\n",
+    " 输入5个学生姓名和年龄，输入格式为\"学号-姓名-年龄\"，\n利用列表分别存储这5名学生的学号、年龄和姓名，并输出"
+  ],
+  "15": [
+    "import pandas as pd\nimport numpy as np\nfrom sklearn.cluster import KMeans\nimport matplotlib.pyplot as plt\n\nclust_data1 = pd.read_csv('clust_data_1.csv')\n\nk = 1\n\nSSE = []\n\nfor k in range(2,8):\n    kmeans = KMeans(n_clusters=k)\n    kmeans.fit(clust_data1)\n    cluster_assignment = kmeans.predict(clust_data1)\n    SSE.append(kmeans.inertia_)\n\n\nplt.plot(range(2,8),SSE,marker=\"o\")\nplt.xlabel(\"K\",size=20)\nplt.ylabel(\"SSE\",size=20)\n\nplt.show()",
+    "K-means examples\n\n",
+    "clust_data1,label = make_blobs(n_features=2, n_samples=300, cluster_std=0.15, centers=[[-0.5,-0.7]], random_state=5)",
+    "data = np.vstack([clust_data1,clust_data2,clust_data3]) []与()",
+    "data = np.vstack([clust_data1,clust_data2,clust_data3]) 解释[]与()",
+    "data = np.vstack([clust_data1,clust_data2,clust_data3]) 用中文解释为什么是[]而不是()",
+    "用中文回答data[:,0]的含义\n",
+    "import pandas as pd\nimport numpy as np\nfrom sklearn.cluster import KMeans\nimport matplotlib.pyplot as plt\n\nclust_data1 = pd.read_csv('clust_data_1.csv')\n\nkmeans = KMeans(n_clusters=2)\nkmeans.fit(clust_data1)\ncluster_assignment = kmeans.predict(clust_data1)\nplt.scatter(clust_data1['X'],clust_data1['Y'],c=cluster_assignment)\nplt.show() 解释代码\n",
+    "import pandas as pd\nimport numpy as np\nfrom sklearn.cluster import KMeans\nimport matplotlib.pyplot as plt\n\nclust_data1 = pd.read_csv('clust_data_1.csv')\n\nkmeans = KMeans(n_clusters=2)\nkmeans.fit(clust_data1)\ncluster_assignment = kmeans.predict(clust_data1)\nplt.scatter(clust_data1['X'],clust_data1['Y'],c=cluster_assignment)\nplt.show() 用中文解释代码",
+    "import pandas as pd\nimport numpy as np\nfrom sklearn.cluster import KMeans\nimport matplotlib.pyplot as plt\n\nclust_data1 = pd.read_csv('clust_data_1.csv')\n\nfig,axs = plt.subplots(2,3)\nk = 1\nfor i in range(2):\n   for j in range(3):\n      k = k + 1\n      kmeans = KMeans(n_clusters=k)\n      kmeans.fit(clust_data1)\n      cluster_assignment = kmeans.predict(clust_data1)\n      axs[i,j].scatter(clust_data1['X'],clust_data1['Y'],c=cluster_assignment)\n      axs[i,j].set_title(f'K={k}')\nplt.show() 用中文解释代码\n",
+    "import pandas as pd\nimport numpy as np\nfrom sklearn.cluster import KMeans\nimport matplotlib.pyplot as plt\n\nclust_data1 = pd.read_csv('clust_data_1.csv')\n\nk = 1\n\nSSE = []\n\nfor k in range(2,8):\n    kmeans = KMeans(n_clusters=k)\n    kmeans.fit(clust_data1)\n    cluster_assignment = kmeans.predict(clust_data1)\n    SSE.append(kmeans.inertia_)\n\n\nplt.plot(range(2,8),SSE,marker=\"o\")\nplt.xlabel(\"K\",size=20)\nplt.ylabel(\"SSE\",size=20)\n\nplt.show() 用中文解释各行代码\n",
+    "loc 与 iloc的区别\n"
+  ],
+  "16": [
+    "元组是什么",
+    "字典是什么",
+    "聚类算法是什么"
+  ],
+  "17": [
+    "文件路径的格式是什么\n",
+    "filename = r'D:\\5-实训内容-学生\\iris.csv'这段代码可能错误在哪里\n\n",
+    "pd.plotting.scatter_matrix(data,diagonal='hist')解释这段代码什么含义\n"
+  ],
+  "20": [
+    "请解释一下pd.plotting.scatter_matrix(data,diagonal='hist')",
+    "核密度估计图是什么样的",
+    "梯度下降的代码实现及注释",
+    "最大似然估计的算法实现注释"
+  ],
+  "23": [
+    "python 中的数据类型有哪些",
+    "对于字典的操作有什么",
+    "如何建立一个图表",
+    "python中的函数分为几类",
+    "如何自定义一个函数\n",
+    "写一个简单的爬虫代码\n",
+    "网络基础是什么\n"
+  ],
+  "24": [
+    "生成一个随机数",
+    "用random生成一个随机整数\n",
+    "用sklearn.datasets 生成花萼等数据\n\n'",
+    "target = iris.target",
+    "iris.target 的输出结果\n",
+    "iris.feature 的输出\n",
+    "print(iris.data)",
+    "print(iris.featue_names)",
+    "print(iris.target)",
+    "print(iris)",
+    "clust_data3,labe3 = make_blobs(n_features=2, n_samples=300, cluster_std=0.3, centers=[[0.5,-0.4]], random_state=5)",
+    "把dataframe 储存到excel\n",
+    "make_blobs 输出的含义分别是什么",
+    "TypeError: 'type' object does not support item assignment"
+  ],
+  "25": [
+    "字典怎么使用",
+    "如何在数组中筛选元素\n",
+    "如何给数组元素排列",
+    "随机生成五个点的坐标，求这五个点到原点的距离的代码",
+    "读入文件iris.csv创建DataFrame对象df，\n\n把鸢尾花的品种数值化处理，\n\n把setosa、versicolor、virginica分别数值化为0，1，2，并添加到df的xid列\n\n把df保存到iris2.csv\n\n利用DataFrame的describe函数计算鸢尾花特征集的统计信息并输出\n\n利用DataFrame的value_counts函数输出每个品种的样本数量。\n\n",
+    "读入文件merr.csv，把相亲节目男性特征数值化处理\n\n数据化处理如下：\n\n长相  帅：0 中：1 丑：2\n\nIT男  是：1 否：0\n\n灭灯情况  灭：0 亮：1\n\n并保存到merr2.csv\n\n利用DataFrame的describe函数计算特征集的统计信息并输出",
+    "读入文件iris2.csv，列x1,x2,x3,x4创建特征集X，列xid创建标签集Y\n\n使用sklearn.model_selection模块提供函数train_test_split按训练集与测试集4：1的比例分割特征集X和标签集Y，得到\nx_train, x_test, y_train, y_test\n"
+  ],
+  "26": [
+    "字典怎么添加元素\n",
+    "元组中元素可变吗",
+    "KNN是什么",
+    "邻近值\n",
+    "pandas是什么",
+    "从字典对象data创建DataFrame，设置索引为labels\n\n输出结果：\n\n  animal  age  visits priority\na    cat  2.5       1      yes\nb    cat  3.0       3      yes\nc  snake  0.5       2       no\nd    dog  NaN       3      yes\ne    dog  5.0       2       no\nf    cat  2.0       3       no\ng  snake  4.5       1       no\nh    cat  NaN       1      yes\ni    dog  7.0       2       no\nj    dog  3.0       1       no",
+    "读入文件iris.csv创建DataFrame对象df，\n\n把鸢尾花的品种数值化处理，\n\n把setosa、versicolor、virginica分别数值化为0，1，2，并添加到df的xid列\n\n把df保存到iris2.csv\n\n利用DataFrame的describe函数计算鸢尾花特征集的统计信息并输出\n\n利用DataFrame的value_counts函数输出每个品种的样本数量。",
+    "系统输入一个正整数N，计算1-N的和并输出\n\n例如：系统输入5，输出内容应为“1-5的和为:15”\n\n请注意输出内容中的冒号为英文冒号，不要输出前后的双引号。",
+    "输入一个数，判断奇偶性，如果是奇数，输出odd, 否则输出even"
+  ],
+  "27": [
+    "TP（True Positive）：指真实值是正的，预测值也是正的样本的个数。\n\nFN（False Negative）：指真实值是正的，预测值是负的样本的个数。\n\nFP（False Positive）：指真实值是负的，预测值是正的样本的个数。\n\nTN（True Negative）：指真实值是负的，预测值也是负的样本的个数。\n\n请输出正确率A的计算公式A=\n",
+    "输出召回率R的计算公式R=",
+    "输出F1的计算公式F1="
+  ],
+  "28": [
+    "教我怎样创建字典\n",
+    "教我怎么在python中使用numpy\n",
+    "教我怎么在python中用pandas的series和dataframe\n",
+    "多举一些dataframe处理数据的例子\n",
+    "matplotlib怎么用",
+    "从字典对象data创建DataFrame，设置索引为labels\n\n输出结果：\n\n  animal  age  visits priority\na    cat  2.5       1      yes\nb    cat  3.0       3      yes\nc  snake  0.5       2       no\nd    dog  NaN       3      yes\ne    dog  5.0       2       no\nf    cat  2.0       3       no\ng  snake  4.5       1       no\nh    cat  NaN       1      yes\ni    dog  7.0       2       no\nj    dog  3.0       1       no",
+    "帮我根据下面的要求生成代码：\n从字典对象data创建DataFrame，索引为labels\n\n计算每个不同种类animal的age的平均数\n\n输出结果：\n\nanimal\n\ncat      2.5\n\ndog      5.0\n\nsnake    2.5\n\nName: age, dtype: float64",
+    "从Automobile_data.csv文件中读取数据到dataframe\n\n1.在df中插入新列color，值为'white'\n\n2.第一行price列的值修改为20000\n\n3.输出dataframe\n\n输出结果：\n\n   index      company   body-style  wheel-base  length  price  color\n0      0  alfa-romero  convertible        88.6   168.8  20000  white\n1      1  alfa-romero  convertible        88.6   168.8  16500  white\n2      2  alfa-romero    hatchback        94.5   171.2  16500  white\n3      3         audi        sedan        99.8   176.6  13950  white\n4      4         audi        sedan        99.4   176.6  17450  white\n5      5         audi        sedan        99.8   177.3  15250  white\n6      6         audi        wagon       105.8   192.7  18920  white\n7      9          bmw        sedan       101.2   176.8  16430  white\n8     10          bmw        sedan       101.2   176.8  16925  white\n\n",
+    "教我怎么用python的matplotlib模块绘图",
+    "提供一些matplot绘图的例子帮助我学习"
+  ],
+  "31": [
+    "能不能用python帮我绘制一个简单的聚类图\n",
+    "能不能用python计算积分\n"
+  ],
+  "32": [
+    "K均值算法具体操作",
+    "绘制散点图\n",
+    "样本特征值的归一化操作的例子及具体代码",
+    "MinMaxScaler函数用法",
+    "fit_transform（）的具体用法",
+    "用多次线性回归对随机样本进行拟合"
+  ],
+  "33": [
+    "给我用matplotlib画一个星星\n",
+    "kmeans\n",
+    "kmeans++算法\n",
+    "生成一个聚类代码\n",
+    "plt.scatter(X[:, 0], X[:, 1], c=labels, s=50, cmap='viridis')解释一下这行代码\n",
+    "X, y = make_blobs(n_samples=300, centers=4, cluster_std=0.60, random_state=0)\n解释一下这行代码\n",
+    "什么是深经网络\n"
+  ],
+  "36": [
+    "series对象是什么",
+    "series返回索引名",
+    "                                    机器学习系统的工作流程\n        ",
+    "文件iris.csv中记录了鸢尾花的特征和种类，\nIris也称鸢尾花卉数据集，是一类多重变量分析的数据集。\n数据集包含150多的数据样本，分为3类，每类50个数据，每个数据包含4个属性。\n可通过花萼长度（Sepal_Length），花萼宽度（Sepal_Width），\n花瓣长度（Petal_Length），花瓣宽度（Petal_Width）4个属性预测鸢尾花卉\n属于（Setosa，Versicolour，Virginica）三个种类中的哪一类。\n程序要求如下：\n1 利用pandas提供的read_csv读入鸢尾花数据文件iris.csv\n2 数据清洗\n2.1 去除重复行\n2.2 Sepal_Length,Sepal_Width,Petal_Length,Petal_Width四个特征的缺失值用该特征的平均值填充，\nSpecies用上一行的数值填充\n3 利用DataFrame的corr函数计算各特征之间的相关系数，并输出\n4 根据鸢尾花的品种（Species）分组，计算各品种鸢尾花的各特征的平均值及其标准差，并把结果保存到iris_spec_cal.csv\n5 绘制花瓣长度（Petal_Length），花瓣宽度（Petal_Width）的散点图，横坐标为花瓣长度，纵坐标为花瓣宽度",
+    "下表是5个小组的学生数据，利用pandas提供read_excel函数，读入所有小组的学生数据，完成下面功能：\n1 读入所有小组学生数据\n2 把所有学生数据组合到一个DataFrame对象\n3 删除重复的数据，并把空数据填充为按上一行的数据填充\n4 将同学数据按照“成绩”排序，统计优秀（≥90）和不合格（<60）学生个数。\n5 分组统计不同省份的学生的月平均生活费。\n41\tmale\t19\t174\t63\tHeiLongJiang\t91\t600\t 5\t5\n42\tmale\t21\t177\t73\tSiChuan\t        89\t700\t 4\t5\n43\tfemale\t21\t161\t55\tXiZang\t        93   1250  5\t5\n44\tmale\t20\t171\t63\tChongQing\t82\t600\t 4\t5\n45\tmale\t20\t168\t63\tJiangXi\t        87\t800\t 5\t5\n46\tmale\t21\t174\t73\tGuangDong\t71\t1300 5\t5\n47\tfemale\t21\t163\t53\tShanXi\t        73\t600\t 4\t5\n48\tmale\t21\t175\t74\tGuangDong\t64\t700\t 3\t4\n49\tmale\t21\t172\t79\tChongQing\t81    1000 5\t5\n50\tfemale\t20\t166\t48\tGuangXi\t        76    1100  4\t4\n"
+  ],
+  "39": [
+    "聚类算法的性能评价",
+    "DBSCAN算法实验\n",
+    "DBSCAN算法实验的代码实现\n",
+    "计算机发展历程\n"
+  ],
+  "40": [
+    "怎么学习机器学习\n\n",
+    "生成一段SQL的代码\n",
+    "生成一段量化回测的代码\n"
+  ],
+  "43": [
+    "解答方程的代码",
+    "x^2+x+6=y\n",
+    "python的特点\n",
+    "文件iris.csv中记录了鸢尾花的特征和种类，\nIris也称鸢尾花卉数据集，是一类多重变量分析的数据集。\n数据集包含150多的数据样本，分为3类，每类50个数据，每个数据包含4个属性。\n可通过花萼长度（Sepal_Length），花萼宽度（Sepal_Width），\n花瓣长度（Petal_Length），花瓣宽度（Petal_Width）4个属性预测鸢尾花卉\n属于（Setosa，Versicolour，Virginica）三个种类中的哪一类。\n程序要求如下：\n1 利用pandas提供的read_csv读入鸢尾花数据文件iris.csv\n2 数据清洗\n2.1 去除重复行\n2.2 Sepal_Length,Sepal_Width,Petal_Length,Petal_Width四个特征的缺失值用该特征的平均值填充，\nSpecies用上一行的数值填充\n3 利用DataFrame的corr函数计算各特征之间的相关系数，并输出\n4 根据鸢尾花的品种（Species）分组，计算各品种鸢尾花的各特征的平均值及其标准差，并把结果保存到iris_spec_cal.csv\n5 绘制花瓣长度（Petal_Length），花瓣宽度（Petal_Width）的散点图，横坐标为花瓣长度，纵坐标为花瓣宽度\n\n",
+    "附件是5个小组的学生数据，利用pandas提供read_excel函数，读入所有小组的学生数据，完成下面功能：\n1 读入所有小组学生数据\n2 把所有学生数据组合到一个DataFrame对象\n3 删除重复的数据，并把空数据填充为按上一行的数据填充\n4 将同学数据按照“成绩”排序，统计优秀（≥90）和不合格（<60）学生个数。\n5 分组统计不同省份的学生的月平均生活费。",
+    "studentsInfo.xlsx附件是5个小组的学生数据，利用pandas提供read_excel函数，读入所有小组的学生数据，完成下面功能：\n1 读入所有小组学生数据\n2 把所有学生数据组合到一个DataFrame对象\n3 删除重复的数据，并把空数据填充为按上一行的数据填充\n4 将同学数据按照“成绩”排序，统计优秀（≥90）和不合格（<60）学生个数。\n5 分组统计不同省份的学生的月平均生活费。",
+    "K紧邻算法分类与回归\n"
+  ],
+  "44": [
+    "401 : Unauthorized\n未授权(1): 请从水杉在线进入本系统，授权后可直接输入域名访问。解决该问题的方法\n",
+    "from sklearn import metrics\ndata.loc[data['class'] == 'setosa','class'] = 0\ndata.loc[data['class'] == 'versicolor','class'] = 1\ndata.loc[data['class'] == 'virginica','class'] = 2\ny= data['class']\nmetrics.adjusted_rand_score(y,kmeans.labels_)\n解释该代码",
+    "兰德系数是什么",
+    "Classification metrics can't handle a mix of unknown and multiclass targets\n报错原因及解决方案",
+    "计算机包含哪些部分",
+    "excel中公式举例说明",
+    "PPT超链接制作"
+  ],
+  "45": [
+    "FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\5-实训内容-学生\\\\iris.csv'这个错误怎么解决\n",
+    "如果是文件编码问题怎么解决\n"
+  ],
+  "46": [
+    "逻辑回归是什么？",
+    "附件是5个小组的学生数据，利用pandas提供read_excel函数，读入所有小组的学生数据，完成下面功能：\n1 读入所有小组学生数据\n2 把所有学生数据组合到一个DataFrame对象\n3 删除重复的数据，并把空数据填充为按上一行的数据填充\n4 将同学数据按照“成绩”排序，统计优秀（≥90）和不合格（<60）学生个数。\n5 分组统计不同省份的学生的月平均生活费。"
+  ],
+  "49": [
+    "关于逻辑回归，描述错误的是____________\nA：逻辑回归一般认为是用来解决分类问题的而不是解决回归问题的\nB：逻辑回归只能解决二分类问题\nC：在逻辑回归模型中，可以用交叉熵作为损失函数\nD：在逻辑回归模型中，可以实现多分类问题\n\n",
+    "当前目录有一个Excel文件racedata.xlsx，存放着5位选手在2015-2019五个年度的竞赛积分（积分越高表示成绩越好），\n\n行对应年度数据，列为各选手在不同年度的积分。请读入数据文件，按要求完成各项数据处理。\n\n（1）读入5位选手的2015-2019年度竞赛积分\n\n（2）计算各选手在2015-2019五个年度中的最高积分，并按降序排序\n\n（3）输出成绩前三名的的运动员姓名及最高积分及最高积分的年度\n\n提示：Series.idxmax()，可得到Series对象最大值的索引名；DataFrame[列名].idxmax() ，默认可得到DataFrame对象该列最大值对应的行索引名。\n\n程序运行示例如下图所示：\n\n朱迪最高积分:8101出现年度:2016年\n\n郑爽最高积分:7981出现年度:2016年\n\n王珊珊最高积分:7935出现年度:2019年\n",
+    "分时操作系统一般采用_________轮转的方式，使一台计算机主机可同时为多个终端用户服务，为用户提供了良好的交互性，所以又称为交互式系统。\n\n"
+  ],
+  "52": [
+    "已知x=np.arange(-50,51)\n定义sigmod函数，利用sigmod函数生成数组y，y的元素为x每个元素的sigmod的函数值\n\n\n",
+    "计算机的组成部分都有什么\n",
+    "内存分为哪几类\n",
+    "sigmoid函数的作用\n",
+    "import pandas as pd\nimport matplotlib.pyplot as plt\nfilename = r'D:\\iris.csv'\ndata = pd.read_csv(filename,header=0)\ndata.columns = ['sepal length','sepal width','petal length','petal width','class']\npd.plotting.scatter_matrix(data,diagonal='hist')\n#scatter_matrix 矩阵的对角线是每个特征的直方图，非对角线是两个特征之间分布的关联散点图\nplt.show()逐行解释这段代码\n",
+    "中央处理器（CPU）有什么用\n",
+    "cpu和ram有什么区别\n"
+  ],
+  "53": [
+    "openai.BadRequestError: Error code: 400 - {'detail': 'Content Exists Risk'}出现这个报错是什么原因",
+    "from sklearn.linear_model import LogisticRegression\nimport numpy as np\nfrom sklearn.preprocessing import LabelBinarizer\nlb = LabelBinarizer()\nx = [ [158, 64], [170, 86], [183, 84], [191, 80], [155, 49], [163, 59], [180, 67], [158, 54], [170, 67] ]\ny_labels = ['男', '男', '男', '男', '女', '女', '女', '女', '女']\ny_train=lb.fit_transform(y_labels)\nK=3\nknn=LogisticRegression()\nknn.fit(x,y_train)\nx_test = [  [168, 65],  [180, 96],  [160, 52],  [169, 67] ]\npre_test=knn.predict(x_test)\npre_label=lb.inverse_transform(pre_test)有什么语法问题\n"
+  ],
+  "60": [
+    "读入iris.csv文件生成DataFrame对象df\n",
+    "系统输入一个正整数N，计算1-N的和并输出\n\n例如：系统输入5，输出内容应为“1-5的和为:15”\n\n请注意输出内容中的冒号为英文冒号，不要输出前后的双引号。",
+    "输入一个数，判断奇偶性，如果是奇数，输出odd, 否则输出even",
+    "实现求任意两个整数的乘积并输出。"
+  ],
+  "63": [
+    "df['xid']=df['xid'].astype(int)如何理解\n",
+    "df.loc[df['长相']=='丑','Appear']=2",
+    "在归一化后训练样本上建立线性回归分析模型，输出模型参数（截距和系数）。"
+  ],
+  "76": [
+    "在mvcc读已提交隔离级别下，可以防止幻读数据异常吗",
+    "PostgreSQL在读已提交隔离级别下，可以防止幻读数据异常吗",
+    "请总结多版本并发控制协议与两阶段封锁协议相比，主要的优势在哪里\n"
+  ],
+  "83": [
+    "教我机器学习部分的内容\n",
+    "教我用python写最小二乘拟合\n",
+    "numpy中reshape(-1)是什么意思\n"
+  ],
+  "84": [
+    "1 选择sklearn.datasets中的鸢尾花据集，\nimport sklearn.datasets as ds\nX,y = ds.load_iris(return_X_y=True)\n或者\ndata = ds.load_iris()\nX = data.data\ny = data.target\n\n2 对数据集进行归一化处理\n3 按7：3生成训练集和测试集\n4 设置K值\n5 使用KNN算法训练模型\n6 使用测试集计算预测值\n7 计算模型的评估值：A、P、R、F1\n",
+    "#5.填空题\nimport pandas as pd\nfrom sklearn.cluster import KMeans\n\n#读取鸢尾花数据集\ndata = pd.read_csv(\"iris\")\n#数据预处理\nX = data.iloc[:3]  # 只选取前三列作为特征\n# 从键盘输入聚类数\ns = int(input(\"请输入聚类数：\\n\"))\n#使用KMeans进行聚类\nkmeans=KMeans(________【3】________, random_state=11) # 设置聚类个数为s\n#使用KMeans对数据进行聚类，返回每个数据的聚类标签\nlabels = kmeans.fit(X).________【4】________ \n#输出每个聚类的样本数量\nfor i in range(s): # 遍历每个聚类\n    count = (labels == i).________【5】________ # 计算该聚类中样本的数量\n    print(f\"类别 {i} 包含 {count} 个样例。\")\n",
+    "\nimport pandas as pd\nfrom sklearn.cluster import KMeans\n\n#读取鸢尾花数据集\ndata =\n#数据预处理\nX = data.iloc[:3]  # 只选取前三列作为特征\n# 从键盘输入聚类数\ns = int(input(\"请输入聚类数：\\n\"))\n#使用KMeans进行聚类\nkmeans=KMeans(________【3】________, random_state=11) # 设置聚类个数为s\n#使用KMeans对数据进行聚类，返回每个数据的聚类标签\nlabels = kmeans.fit(X).________【4】________ \n#输出每个聚类的样本数量\nfor i in range(s): # 遍历每个聚类\n    count = (labels == i).________【5】________ # 计算该聚类中样本的数量\n    print(f\"类别 {i} 包含 {count} 个样例。\")",
+    ".程序编写题\n程序功能：房屋数据集（house.csv）记录了某区域部分房屋销售的信息，包含房屋价格、房屋状况、卧室数目等12个属性，。根据以下要求完成模型训练，对新样本的房屋价格进行预测。\n（1）从文件中读出房屋数据到DataFrame中，判断数据集中是否有缺失数据，删除包含缺失数据的行。\n（2）将起居室面积（sqft_living）、评分(grade)、修建时间（yr_built）作为特征值X，价格（price）做标签值Y，作为训练样本。\n（3）对特征值：训练样本X和测试样本X_new做统一的归一化处理。\n（4）在归一化后训练样本上建立线性回归分析模型，输出模型参数（截距和系数）。\n（5）对归一化后新样本预测价格。\n",
+    "6.程序编写题\n本题所使用的为 Seeds 数据集（seeds.csv 文件），该数据集包含了种子的面积、周长、紧凑度、种子长度、种子宽度、不对称系数、种子凹槽长度和类别八列数据。其中类别列包含 3 种标签。现在我们想要使用 KNN 分类器对种子进行分类。\n程序功能：按下列要求对 Seeds 数据集进行切分，训练数据并输出评价指标。\n（1）导入库和数据集，将数据集划分为不含类别（class 列）的特征集和类别（class 列）标签集；\n（2）划分数据集为训练集和测试集，测试样本占 20%，随机数编号为 k，示例中 k=42；\n（3）创建 KNN 分类器，指定邻居数量为 3，在训练集上训练分类器，并在测试集上对结果进行预测；\n（4）计算召回率并输出分类结果评价指标，其中召回率评价值的平均值计算方式 average 设为 'macro'，保留四位小数。"
+  ],
+  "87": [
+    "填空题\n#给定代码不准删除修改，所有填空使用一个表达式完成。\nimport numpy as np\nfrom sklearn import metrics\n\n#最高温度预测的真实值与预测值\ny1_true = np.array([10,12,13,14,12,15,14,18,13,14,15,16])  # 真实结果\ny1_pred = np.array([10,12,13,14,15,15,17,18,13,10,15,16]) # 预测结果\n# 针对上面的预测结果，计算预测结果的均方根误差RMSE\nRMSE = ______【1】______\n# 打印\nprint(f'1.The RMSE is {RMSE:.1f}.')\n\n\n#天气预测（不下雨0，下雨1）的真实值与预测值\ny2_pred = np.array([0, 1, 1, 1, 0, 0, 1, 1]) # 预测结果\ny2_true = np.array([0, 1, 1, 0, 1, 0, 0, 1]) # 真实结果\n#针对上面的预测结果，计算预测结果的正确率\nA = ______【2】______\n# 打印\nprint(f'2.The Acurracy is {A*100:.1f}%.')\n\n",
+    "import numpy as np\nfrom sklearn import metrics\n\n#最高温度预测的真实值与预测值\ny1_true = np.array([10,12,13,14,12,15,14,18,13,14,15,16])  # 真实结果\ny1_pred = np.array([10,12,13,14,15,15,17,18,13,10,15,16])  # 预测结果\n#针对上面的预测结果，计算预测结果的平均绝对误差\nMAE = ________【1】__________\n# 打印\nprint(f'1.The MAE is {MAE:.1f}.')\n\n#垃圾邮件预测结果（垃圾邮件0，非垃圾邮件1）的真实值与预测值\ny2_pred = np.array([0, 1, 1, 1, 0, 0, 1, 1]) # 预测结果\ny2_true = np.array([0, 1, 1, 0, 1, 0, 0, 1]) # 真实结果\n# 针对上面的预测结果，计算预测结果的F1指标\nF1 = __________【2】_________\n# 打印\nprint(f'2.The F1 is {F1*100:.1f}%.')",
+    "程序编写题\n程序功能：房屋数据集（house.csv）记录了某区域部分房屋销售的信息，包含房屋价格、房屋状况、卧室数目等12个属性，。根据以下要求完成模型训练，对新样本的房屋价格进行预测。\n（1）从文件中读出房屋数据到DataFrame中，判断数据集中是否有缺失数据，删除包含缺失数据的行。\n（2）将起居室面积（sqft_living）、评分(grade)、修建时间（yr_built）作为特征值X，价格（price）做标签值Y，作为训练样本。\n（3）对特征值：训练样本X和测试样本X_new做统一的归一化处理。\n（4）在归一化后训练样本上建立线性回归分析模型，输出模型参数（截距和系数）。\n（5）对归一化后新样本预测价格。\n"
+  ],
+  "89": [
+    "1.填空题\n#给定代码不准删除修改，所有填空使用一个表达式完成。\nimport numpy as np\nfrom sklearn import metrics\n\n#最高温度预测的真实值与预测值\ny1_true = np.array([10,12,13,14,12,15,14,18,13,14,15,16])  # 真实结果\ny1_pred = np.array([10,12,13,14,15,15,17,18,13,10,15,16]) # 预测结果\n# 针对上面的预测结果，计算预测结果的均方根误差RMSE\nRMSE = ______【1】______\n# 打印\nprint(f'1.The RMSE is {RMSE:.1f}.')\n\n\n#天气预测（不下雨0，下雨1）的真实值与预测值\ny2_pred = np.array([0, 1, 1, 1, 0, 0, 1, 1]) # 预测结果\ny2_true = np.array([0, 1, 1, 0, 1, 0, 0, 1]) # 真实结果\n#针对上面的预测结果，计算预测结果的正确率\nA = ______【2】______\n# 打印\nprint(f'2.The Acurracy is {A*100:.1f}%.')\n\n",
+    "linspace函数的用法\n"
+  ],
+  "90": [
+    "import numpy as np\nfrom sklearn import metrics\n\n#最高温度预测的真实值与预测值\ny1_true = np.array([10,12,13,14,12,15,14,18,13,14,15,16])  # 真实结果\ny1_pred = np.array([10,12,13,14,15,15,17,18,13,10,15,16])  # 预测结果\n#针对上面的预测结果，计算预测结果的平均绝对误差",
+    "y2_pred = np.array([0, 1, 1, 1, 0, 0, 1, 1]) # 预测结果\ny2_true = np.array([0, 1, 1, 0, 1, 0, 0, 1]) # 真实结果\n# 针对上面的预测结果，计算预测结果的F1指标",
+    "房屋数据集（house.csv）记录了某区域部分房屋销售的信息，包含房屋价格、房屋状况、卧室数目等12个属性，。根据以下要求完成模型训练，对新样本的房屋价格进行预测。\n（1）从文件中读出房屋数据到DataFrame中，判断数据集中是否有缺失数据，删除包含缺失数据的行。\n（2）将起居室面积（sqft_living）、评分(grade)、修建时间（yr_built）作为特征值X，价格（price）做标签值Y，作为训练样本。\n（3）对特征值：训练样本X和测试样本X_new做统一的归一化处理。\n（4）在归一化后训练样本上建立线性回归分析模型，输出模型参数（截距和系数）。\n（5）对归一化后新样本预测价格。\n",
+    "python创造数组"
+  ],
+  "91": [
+    "1 选择sklearn.datasets中的鸢尾花据集，\nimport sklearn.datasets as ds\nX,y = ds.load_iris(return_X_y=True)\n或者\ndata = ds.load_iris()\nX = data.data\ny = data.target\n\n2 对数据集进行归一化处理\n3 按7：3生成训练集和测试集\n4 设置K值\n5 使用KNN算法训练模型\n6 使用测试集计算预测值\n7 计算模型的评估值：A、P、R、F1",
+    "从sklearn的datasets获得波士顿房价数据集。利用线性回归对波士顿房价进行预测。\n\n1 获得波士顿房价数据集\nfrom sklearn import datasets\n‘’‘清空sklearn环境下所有数据’’’\ndatasets.clear_data_home()\nX,y = datasets.load_boston(return_X_y=True)\n\n或者\nBunt = datsets.load_boston()\nX = Bunt.data\nY = Bunt.target\n\n2 按80%的训练集20%的测试集随机划分样本，训练模型，输出训练集的模型得分score，\n3 利用测试样本对模型进行评估， 使用均方误差。\n\nfrom sklearn.metrics import mean_squared_error\ntrain_mse = mean_squared_error(y_train, y_train_pred)\ntest_mst = mean_squared_error(y_test, y_test_pred)\n\n",
+    "# fillblank_2.py\n\n# 导入库\nimport matplotlib.pyplot as plt\nfrom sklearn.cluster import KMeans # 导入聚类库\nimport pandas as pd\nimport numpy as np\nplt.rcParams['font.sans-serif'] = ['SimHei'] \nplt.rcParams['axes.unicode_minus'] = False\n\n# 加载数据集并提取数据\ndata_ori = pd.read_csv('housing.csv')  # 读取housing.csv数据\ndata = ________【3】________ # 提取聚类需要使用的三列元素\n\n# 从键盘输入聚类数\nn = int(input(\"请输入聚类数：\\n\"))\n\n# 聚类训练\nres = KMeans(n_features=n, random_state = 1)  # 设置聚类数为n\nres.fit(data)\n\n# 展示结果\nlabels = res.labels_ \ncenters = ________【5】________  # 设置所有质心\nprint(centers)\n请将代码补充完整",
+    "#fillblank_1.py\n#给定代码不准删除修改，所有填空使用一个表达式完成。\n\nimport numpy as np\nnp.random.seed(6)  ##设定随机种子，不要改动！\n\n#生成成绩：随机整数，范围在[40,100)之间，二维数组，每行数据依次为某同学的语文、数学、英语这三门课的成绩\nscores=np.random.randint(40,100,(2,3))\n\n#请输入一个分数：\nscore=int(input(\"请输入分数：\"))\n\n#统计输入分数以下的成绩信息：\nmask=(scores&lt;score)\n\n#分别统计语文、数学、英语三门课在分数段以下的人数\nprint(\"语文、数学、英语三门课在{}分以下的人数分别为：\".format(score), np.sum(mask)) \n\n#统计三门课都及格的人数\nprint(\"三门课都在{}分以上的人数为：\".format(score), np.sum(scores>=60)  \n\n#输出三门课的平均分\nprint(\"三门课的平均分分别为：\",np.mean(scores) )\n\n#输出三门课平均分在输入成绩以上的人数\nprint(\"三门课平均分在{}分以上的人数为：\".format(score), np.sum(scores>score))\n请改错",
+    "#pro1.py\n#导入相关包\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nplt.rcParams['font.sans-serif'] = ['SimHei'] \nplt.rcParams['axes.unicode_minus'] = False\n\n\n#（1）读取c:\\ecnu_ks\\root中的文件student_score.csv中的学生语文、数学、英语三列成绩数据,注意csv文件中的分隔符，且文件中含中文字符\n#（2）数据清洗：清除三门课全部缺考的学生，将部分缺考的学生成绩设为0\n#（3）数据统计和分析：输入一个总成绩，输出比这个总成绩高的人数。\n#（4）绘制出数学成绩各成绩段的饼图并保存为\"pie.png\"。"
+  ],
+  "92": [
+    "3.程序编写题\n程序功能：房屋数据集（house.csv）记录了某区域部分房屋销售的信息，包含房屋价格、房屋状况、卧室数目等12个属性，。根据以下要求完成模型训练，对新样本的房屋价格进行预测。\n（1）从文件中读出房屋数据到DataFrame中，判断数据集中是否有缺失数据，删除包含缺失数据的行。\n（2）将起居室面积（sqft_living）、评分(grade)、修建时间（yr_built）作为特征值X，价格（price）做标签值Y，作为训练样本。\n（3）对特征值：训练样本X和测试样本X_new做统一的归一化处理。\n（4）在归一化后训练样本上建立线性回归分析模型，输出模型参数（截距和系数）。\n（5）对归一化后新样本预测价格。",
+    "从sklearn的datasets获得波士顿房价数据集。利用线性回归对波士顿房价进行预测。\n\n1 获得波士顿房价数据集\nfrom sklearn import datasets\n‘’‘清空sklearn环境下所有数据’’’\ndatasets.clear_data_home()\nX,y = datasets.load_boston(return_X_y=True)\n\n或者\nBunt = datsets.load_boston()\nX = Bunt.data\nY = Bunt.target\n\n2 按80%的训练集20%的测试集随机划分样本，训练模型，输出训练集的模型得分score，\n3 利用测试样本对模型进行评估， 使用均方误差。\n\nfrom sklearn.metrics import mean_squared_error\ntrain_mse = mean_squared_error(y_train, y_train_pred)\ntest_mst = mean_squared_error(y_test, y_test_pred)"
+  ],
+  "93": [
+    "（2）将起居室面积（sqft_living）、评分(grade)、修建时间（yr_built）作为特征值X，价格（price）做标签值Y，作为训练样本。",
+    "程序功能：房屋数据集（house.csv）记录了某区域部分房屋销售的信息，包含房屋价格、房屋状况、卧室数目等12个属性，。根据以下要求完成模型训练，对新样本的房屋价格进行预测。\n（1）从文件中读出房屋数据到DataFrame中，判断数据集中是否有缺失数据，删除包含缺失数据的行。\n（2）将起居室面积（sqft_living）、评分(grade)、修建时间（yr_built）作为特征值X，价格（price）做标签值Y，作为训练样本。\n（3）对特征值：训练样本X和测试样本X_new做统一的归一化处理。\n（4）在归一化后训练样本上建立线性回归分析模型，输出模型参数（截距和系数）。\n（5）对归一化后新样本预测价格。",
+    "kmeans()函数\n",
+    "使用KMeans对数据进行聚类，返回每个数据的聚类标签\nlabels = kmeans.fit(X).________【4】________ ",
+    "count = (labels == i).________【5】________ # 计算该聚类中样本的数量",
+    "for i in range(s): # 遍历每个聚类\n    count = (labels == i).np.count # 计算该聚类中样本的数量"
+  ],
+  "95": [
+    "使用kmeans对数据进行聚类，返回每个数据的聚类标签",
+    "计算该聚类中样本的数量",
+    "程序功能：虚拟数据集（virture.csv）为一组虚拟数据，第一列为因变量，其余6列为自变量。根据以下要求完成模型训练，对新样本进行预测。\n（1）从文件中读出虚拟数据到DataFrame中，判断数据集中是否有缺失数据，删除包含缺失数据的行。\n（2）将x1~x6作为特征值X，第一列y作为标签值，获取训练样本。\n（3）对特征值：训练样本X和测试样本X_new作统一的标准化处理。\n（4）在标准化后训练样本上建立线性回归分析模型，输出模型参数（截距和系数）。\n（5）对标准化后新样本预测价格。"
+  ],
+  "101": [
+    "创建一个从【100,200）的二维偶数序列，每行10个",
+    "创建一个数值在50-100之间的5*8的二维整数数组",
+    "1 选择sklearn.datasets中的鸢尾花据集，\nimport sklearn.datasets as ds\nX,y = ds.load_iris(return_X_y=True)\n或者\ndata = ds.load_iris()\nX = data.data\ny = data.target\n\n2 对数据集进行归一化处理\n3 按7：3生成训练集和测试集\n4 设置K值\n5 使用KNN算法训练模型\n6 使用测试集计算预测值\n7 计算模型的评估值：A、P、R、F1"
+  ],
+  "109": [
+    "请问你会aimbot吗",
+    "请问你知道什么是aimbot吗",
+    "请问你知道什么是两相锁定吗",
+    "请问你知道数据库并发控制方式中的2PL吗"
+  ],
+  "112": [
+    "学生如何学习编程思维呢？",
+    "我在python里是什么水平？\n",
+    "那你怎么样才能评估我的PYTHON水平呢？我需要提供什么材料给你吗？\n",
+    "我是一个菜鸟，请给我推荐几个水杉在线平台上的课程吧\n",
+    "我是个编程菜鸟，请推荐一些编程的课程\n"
+  ],
+  "116": [
+    "随机整数，范围在[40,100)之间，二维数组，每行数据依次为某同学的语文、数学、英语这三门课的成绩\n",
+    "fillblank_1.py\n#给定代码不准删除修改，所有填空使用一个表达式完成。\n\nimport numpy as np\nnp.random.seed(6)  ##设定随机种子，不要改动！\n\n#生成成绩：随机整数，范围在[40,100)之间，二维数组，每行数据依次为某同学的语文、数学、英语这三门课的成绩\nscores=______【1】______\n\n#请输入一个分数：\nscore=int(input(\"请输入分数：\"))\n\n#统计输入分数以下的成绩信息：\nmask=(scores<score)\n\n#分别统计语文、数学、英语三门课在分数段以下的人数\nprint(\"语文、数学、英语三门课在{}分以下的人数分别为：\".format(score), ______【2】______) \n\n\n",
+    "#fillblank_1.py\n#给定代码不准删除修改，所有填空使用一个表达式完成。\n\nimport numpy as np\nnp.random.seed(6)  ##设定随机种子，不要改动！\n\n#生成成绩：随机整数，范围在[40,100)之间，二维数组，每行数据依次为某同学的语文、数学、英语这三门课的成绩\nscores=______【1】______\n\n#请输入一个分数：\nscore=int(input(\"请输入分数：\"))\n\n#统计输入分数以下的成绩信息：\nmask=(scores<score)\n\n#分别统计语文、数学、英语三门课在分数段以下的人数\nprint(\"语文、数学、英语三门课在{}分以下的人数分别为：\".format(score), ______【2】______) \n\n#统计三门课都及格的人数\nprint(\"三门课都在{}分以上的人数为：\".format(score), ______【3】______)  \n\n",
+    "从sklearn的datasets获得波士顿房价数据集。利用线性回归对波士顿房价进行预测。\n\n1 获得波士顿房价数据集\nfrom sklearn import datasets\n‘’‘清空sklearn环境下所有数据’’’\ndatasets.clear_data_home()\nX,y = datasets.load_boston(return_X_y=True)\n\n或者\nBunt = datsets.load_boston()\nX = Bunt.data\nY = Bunt.target\n\n2 按80%的训练集20%的测试集随机划分样本，训练模型，输出训练集的模型得分score，\n3 利用测试样本对模型进行评估， 使用均方误差。"
+  ],
+  "117": [
+    "解释一下导入numpy或pandas库之后随机种子是如何使用的",
+    "生成成绩：随机整数，范围在[40,100)之间，二维数组，每行数据依次为某同学的语文、数学、英语这三门课的成绩\n",
+    "怎样在numpy中统计数据\n",
+    "详细介绍一下切片技术在列表和numpy数组中的使用，包括各种特殊情况。\n",
+    "Numpy中如何用append,insert,delete对数组元素进行删除\n",
+    "numpy中怎么用loc,iloc",
+    "创建一个形状shape=(20，3)，值为[80-100)的整数值随机数组arr1，\n创建一个形状shape=(10，3)，值为[60-100)的整数值随机数组arr2，\narr1和arr2垂直拼接得到数组arr，\n假设该数组arr是某班30名学生的语文数学和英语成绩。",
+    "创建一个从[100,200)的二维偶数序列，每行10个",
+    "在3.5公里的路段每隔0.7公里设置一路桩，创建路桩的位置数组。",
+    "创建一个以10为底，指数区间为[2，3]的长度为5的等比数列"
+  ],
+  "122": [
+    "从sklearn的datasets获得波士顿房价数据集。利用线性回归对波士顿房价进行预测。\n\n1 获得波士顿房价数据集\nfrom sklearn import datasets\n‘’‘清空sklearn环境下所有数据’’’\ndatasets.clear_data_home()\nX,y = datasets.load_boston(return_X_y=True)\n\n或者\nBunt = datsets.load_boston()\nX = Bunt.data\nY = Bunt.target\n\n2 按80%的训练集20%的测试集随机划分样本，训练模型，输出训练集的模型得分score，\n3 利用测试样本对模型进行评估， 使用均方误差。\n\nfrom sklearn.metrics import mean_squared_error\ntrain_mse = mean_squared_error(y_train, y_train_pred)\ntest_mst = mean_squared_error(y_test, y_test_pred)\n",
+    "1 选择sklearn.datasets中的鸢尾花据集，\nimport sklearn.datasets as ds\nX,y = ds.load_iris(return_X_y=True)\n或者\ndata = ds.load_iris()\nX = data.data\ny = data.target\n\n2 对数据集进行归一化处理\n3 按7：3生成训练集和测试集\n4 设置K值\n5 使用KNN算法训练模型\n6 使用测试集计算预测值\n7 计算模型的评估值：A、P、R、F1",
+    "#fillblank_1.py\n#给定代码不准删除修改，所有填空使用一个表达式完成。\n\nimport numpy as np\nnp.random.seed(6)  ##设定随机种子，不要改动！\n\n#生成成绩：随机整数，范围在[40,100)之间，二维数组，每行数据依次为某同学的语文、数学、英语这三门课的成绩\nscores=______【1】______\n\n#请输入一个分数：\nscore=int(input(\"请输入分数：\"))\n\n#统计输入分数以下的成绩信息：\nmask=(scores<score)\n\n#分别统计语文、数学、英语三门课在分数段以下的人数\nprint(\"语文、数学、英语三门课在{}分以下的人数分别为：\".format(score), ______【2】______) \n\n#统计三门课都及格的人数\nprint(\"三门课都在{}分以上的人数为：\".format(score), ______【3】______)  \n\n#输出三门课的平均分\nprint(\"三门课的平均分分别为：\", ______【4】______)\n\n#输出三门课平均分在输入成绩以上的人数\nprint(\"三门课平均分在{}分以上的人数为：\".format(score), ______【5】______) \n\n\n",
+    "# fillblank_2.py\n\n# 导入库\nimport matplotlib.pyplot as plt\nfrom ________【1】________ import KMeans # 导入聚类库\nimport pandas as pd\nimport numpy as np\nplt.rcParams['font.sans-serif'] = ['SimHei'] \nplt.rcParams['axes.unicode_minus'] = False\n\n# 加载数据集并提取数据\ndata_ori = ________【2】________  # 读取housing.csv数据\ndata = ________【3】________ # 提取聚类需要使用的三列元素\n\n# 从键盘输入聚类数\nn = int(input(\"请输入聚类数：\\n\"))\n\n# 聚类训练\nres = KMeans(________【4】________, random_state = 1)  # 设置聚类数为n\nres.fit(data)\n\n# 展示结果\nlabels = res.labels_ \ncenters = ________【5】________  # 设置所有质心\nprint(centers)\n",
+    "Traceback (most recent call last):\n  File \"C:\\Users\\stu\\Desktop\\ecnu_ks_a\\root\\fillblank_2.py\", line 13, in <module>\n    data = data_ori[['longitude','latitude','median_income']] # 提取聚类需要使用的三列元素\nTypeError: 'function' object is not subscriptable\n",
+    "a.程序功能： 读入“housing.csv”文件，按注释要求对某地区收入中位数进行聚类，以展示该地区的收入情况。聚类需要使用数据集中的三列元素：longitude，经度；latitude，纬度；median_income，收入中位数。\n\nb.原始程序如下图所示： \n# fillblank_2.py\n\n# 导入库\nimport matplotlib.pyplot as plt\nfrom ________【1】________ import KMeans # 导入聚类库\nimport pandas as pd\nimport numpy as np\nplt.rcParams['font.sans-serif'] = ['SimHei'] \nplt.rcParams['axes.unicode_minus'] = False\n\n# 加载数据集并提取数据\ndata_ori = ________【2】________  # 读取housing.csv数据\ndata = ________【3】________ # 提取聚类需要使用的三列元素\n\n# 从键盘输入聚类数\nn = int(input(\"请输入聚类数：\\n\"))\n\n# 聚类训练\nres = KMeans(________【4】________, random_state = 1)  # 设置聚类数为n\nres.fit(data)\n\n# 展示结果\nlabels = res.labels_ \ncenters = ________【5】________  # 设置所有质心\nprint(centers)\n\n\n\n \n\n\n",
+    "Traceback (most recent call last):\n  File \"C:\\Users\\stu\\Desktop\\ecnu_ks_a\\root\\fillblank_2.py\", line 24, in <module>\n    centers =res.cluster_centers  # 设置所有质心\nAttributeError: 'KMeans' object has no attribute 'cluster_centers'",
+    "a.程序功能：按下列要求读入数据文件，对数据进行清洗，并进行统计和分析，最后输出如样张所示的可视化图形并保存。\n（1）读取c:\\ecnu_ks\\root中的文件student_score.csv中的学生语文、数学、英语三列成绩数据,注意csv文件中的分隔符，且文件中含中文字符；\n（2）数据清洗：清除三门课全部缺考的学生，将部分缺考的学生成绩设为0；\n（3）数据统计和分析：输入一个总成绩，输出比这个总成绩高的人数；\n（4）绘制出数学成绩各成绩段的饼图并保存为\"pie.png\"，如样张所示。\n提示：注意读取数据的数据类型。 ",
+    "Traceback (most recent call last):\n  File \"C:\\Users\\stu\\Desktop\\ecnu_ks_a\\root\\pro1.py\", line 8, in <module>\n    df=pd.read_csv('c:\\ecnu_ks\\root\\student_score.csv',encoding='utf-8')\n  File \"C:\\Users\\stu\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\pandas\\util\\_decorators.py\", line 311, in wrapper\n    return func(*args, **kwargs)\n  File \"C:\\Users\\stu\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\pandas\\io\\parsers\\readers.py\", line 586, in read_csv\n    return _read(filepath_or_buffer, kwds)\n  File \"C:\\Users\\stu\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\pandas\\io\\parsers\\readers.py\", line 482, in _read\n    parser = TextFileReader(filepath_or_buffer, **kwds)\n  File \"C:\\Users\\stu\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\pandas\\io\\parsers\\readers.py\", line 811, in __init__\n    self._engine = self._make_engine(self.engine)\n  File \"C:\\Users\\stu\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\pandas\\io\\parsers\\readers.py\", line 1040, in _make_engine\n    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]\n  File \"C:\\Users\\stu\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\pandas\\io\\parsers\\c_parser_wrapper.py\", line 51, in __init__\n    self._open_handles(src, kwds)\n  File \"C:\\Users\\stu\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\pandas\\io\\parsers\\base_parser.py\", line 222, in _open_handles\n    self.handles = get_handle(\n  File \"C:\\Users\\stu\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\pandas\\io\\common.py\", line 701, in get_handle\n    handle = open(\nOSError: [Errno 22] Invalid argument: 'c:\\\\ecnu_ks\\root\\\\student_score.csv'"
+  ],
+  "124": [
+    "如何提取数据前三列的数据",
+    "如何获取数据前三行数据",
+    "# 导入库\nimport matplotlib.pyplot as plt\nfrom ________【1】________ import KMeans # 导入聚类库",
+    "# 从键盘输入聚类数\nn = int(input(\"请输入聚类数：\\n\"))\n\n# 聚类训练\nres = KMeans(________【4】________, random_state = 1)  # 设置聚类数为n\nres.fit(data)",
+    "a.程序功能：按下列要求读入数据文件，对数据进行清洗，并进行统计和分析，最后输出如样张所示的可视化图形并保存。\n（1）读取c:\\ecnu_ks\\root中的文件student_score.csv中的学生语文、数学、英语三列成绩数据,注意csv文件中的分隔符，且文件中含中文字符；\n（2）数据清洗：清除三门课全部缺考的学生，将部分缺考的学生成绩设为0；\n（3）数据统计和分析：输入一个总成绩，输出比这个总成绩高的人数；\n（4）绘制出数学成绩各成绩段的饼图并保存为\"pie.png\"，如样张所示。",
+    "文件iris.csv中记录了鸢尾花的特征和种类，\nIris也称鸢尾花卉数据集，是一类多重变量分析的数据集。\n数据集包含150多的数据样本，分为3类，每类50个数据，每个数据包含4个属性。\n可通过花萼长度（Sepal_Length），花萼宽度（Sepal_Width），\n花瓣长度（Petal_Length），花瓣宽度（Petal_Width）4个属性预测鸢尾花卉\n属于（Setosa，Versicolour，Virginica）三个种类中的哪一类。\n程序要求如下：\n1 利用pandas提供的read_csv读入鸢尾花数据文件iris.csv\n2 数据清洗\n2.1 去除重复行\n2.2 Sepal_Length,Sepal_Width,Petal_Length,Petal_Width四个特征的缺失值用该特征的平均值填充，\nSpecies用上一行的数值填充\n3 利用DataFrame的corr函数计算各特征之间的相关系数，并输出\n4 根据鸢尾花的品种（Species）分组，计算各品种鸢尾花的各特征的平均值及其标准差，并把结果保存到iris_spec_cal.csv\n5 绘制花瓣长度（Petal_Length），花瓣宽度（Petal_Width）的散点图，横坐标为花瓣长度，纵坐标为花瓣宽度"
+  ],
+  "125": [
+    "按7：3生成训练集和测试集",
+    " 使用KNN算法训练模型",
+    "&lt作用\n",
+    "format的作用\n",
+    "mask=(scores&lt;score)",
+    "mask=(scores&lt;score)什么意思\n",
+    "提取聚类需要使用的三列元素的方法\n",
+    "'longitude','latitude','median_income'什么意思\n",
+    "mask=df=='缺考'怎么理解\n",
+    "(0，A)为什么不是false\n",
+    "mask=df=='缺考'\ndf['缺考']=np.nan怎么理解",
+    "为什么第一行两个元素都是nan\n",
+    "print('精确率:%.4f,%P')如何理解",
+    "print('精确率: %.4f' % precision)如何理解",
+    "P=metrics.precision_score(y_test,y_pred,average='macro')\nprint('精确率:%.4f % P')"
+  ],
+  "128": [
+    "用numpy输出数组中符合要求的元素个数",
+    "import numpy as np\nnp.random.seed(6)  ##设定随机种子，不要改动！\n\n#生成成绩：随机整数，范围在[40,100)之间，二维数组，每行数据依次为某同学的语文、数学、英语这三门课的成绩\nscores=np.random.randint(40,100,(50,3))\nprint(scores)\n\n#请输入一个分数：\nscore=int(input(\"请输入分数：\"))\n\n#统计输入分数以下的成绩信息：\nmask=(scores&lt;score)\n\n#分别统计语文、数学、英语三门课在分数段以下的人数",
+    "import numpy as np\nnp.random.seed(6)  ##设定随机种子，不要改动！\n\n#生成成绩：随机整数，范围在[40,100)之间，二维数组，每行数据依次为某同学的语文、数学、英语这三门课的成绩\nscores=np.random.randint(40,100,(50,3))\nprint(scores)\n\n#请输入一个分数：\nscore=int(input(\"请输入分数：\"))\n\n#统计输入分数以下的成绩信息：\nmask=(scores<score)\n#统计三门课都及格的人数",
+    "用numpy求二维数组中每行的平均值",
+    "TP（True Positive）：指真实值是正的，预测值也是正的样本的个数。\n\nFN（False Negative）：指真实值是正的，预测值是负的样本的个数。\n\nFP（False Positive）：指真实值是负的，预测值是正的样本的个数。\n\nTN（True Negative）：指真实值是负的，预测值也是负的样本的个数。\n\n请输出精确率A的计算公式A=",
+    "输出正确率P的计算公式P=",
+    "输出召回率R的计算公式R=",
+    "输出F1的计算公式F1=",
+    " 读入iris.csv文件生成DataFrame对象df\n\ndf=pd.read_csv('iris.csv')\n2 并把鸢尾花的品种数值化处理，把setosa、versicolor、virginica分别数值化为0，1，2，并添加到df的xid列"
+  ],
+  "129": [
+    "# 导入库\nimport matplotlib.pyplot as plt\nfrom ________【1】________ import KMeans # 导入聚类库\nimport pandas as pd\nimport numpy as np\nplt.rcParams['font.sans-serif'] = ['SimHei'] \nplt.rcParams['axes.unicode_minus'] = False\n\n# 加载数据集并提取数据\ndata_ori = ________【2】________  # 读取housing.csv数据\ndata = ________【3】________ # 提取聚类需要使用的三列元素\n\n# 从键盘输入聚类数\nn = int(input(\"请输入聚类数：\\n\"))\n\n# 聚类训练\nres = KMeans(________【4】________, random_state = 1)  # 设置聚类数为n\nres.fit(data)\n\n# 展示结果\nlabels = res.labels_ \ncenters = ________【5】________  # 设置所有质心\nprint(centers)完成代码\n",
+    "#pro1.py\n#导入相关包\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nplt.rcParams['font.sans-serif'] = ['SimHei'] \nplt.rcParams['axes.unicode_minus'] = False\n\n\n#（1）读取c:\\ecnu_ks\\root中的文件student_score.csv中的学生语文、数学、英语三列成绩数据,注意csv文件中的分隔符，且文件中含中文字符\n#（2）数据清洗：清除三门课全部缺考的学生，将部分缺考的学生成绩设为0\n#（3）数据统计和分析：输入一个总成绩，输出比这个总成绩高的人数。\n#（4）绘制出数学成绩各成绩段的饼图并保存为\"pie.png\"。\n完成代码"
+  ],
+  "132": [
+    "1 选择sklearn.datasets中的鸢尾花据集，\nimport sklearn.datasets as ds\nX,y = ds.load_iris(return_X_y=True)\n或者\ndata = ds.load_iris()\nX = data.data\ny = data.target\n\n2 对数据集进行归一化处理\n3 按7：3生成训练集和测试集\n4 设置K值\n5 使用KNN算法训练模型\n6 使用测试集计算预测值\n7 计算模型的评估值：A、P、R、F1",
+    "从sklearn的datasets获得波士顿房价数据集。利用线性回归对波士顿房价进行预测。\n\n1 获得波士顿房价数据集\nfrom sklearn import datasets\n‘’‘清空sklearn环境下所有数据’’’\ndatasets.clear_data_home()\nX,y = datasets.load_boston(return_X_y=True)\n\n或者\nBunt = datsets.load_boston()\nX = Bunt.data\nY = Bunt.target\n\n2 按80%的训练集20%的测试集随机划分样本，训练模型，输出训练集的模型得分score，\n3 利用测试样本对模型进行评估， 使用均方误差。\n\nfrom sklearn.metrics import mean_squared_error\ntrain_mse = mean_squared_error(y_train, y_train_pred)\ntest_mst = mean_squared_error(y_test, y_test_pred)"
+  ],
+  "137": [
+    "1 选择sklearn.datasets中的鸢尾花据集，\nimport sklearn.datasets as ds\nX,y = ds.load_iris(return_X_y=True)\n或者\ndata = ds.load_iris()\nX = data.data\ny = data.target\n\n2 对数据集进行归一化处理\n3 按7：3生成训练集和测试集\n4 设置K值\n5 使用KNN算法训练模型\n6 使用测试集计算预测值\n7 计算模型的评估值：A、P、R、F1",
+    "从sklearn的datasets获得波士顿房价数据集。利用线性回归对波士顿房价进行预测。\n\n1 获得波士顿房价数据集\nfrom sklearn import datasets\n‘’‘清空sklearn环境下所有数据’’’\ndatasets.clear_data_home()\nX,y = datasets.load_boston(return_X_y=True)\n\n或者\nBunt = datsets.load_boston()\nX = Bunt.data\nY = Bunt.target\n\n2 按80%的训练集20%的测试集随机划分样本，训练模型，输出训练集的模型得分score，\n3 利用测试样本对模型进行评估， 使用均方误差。\n\nfrom sklearn.metrics import mean_squared_error\ntrain_mse = mean_squared_error(y_train, y_train_pred)\ntest_mst = mean_squared_error(y_test, y_test_pred)"
+  ],
+  "141": [
+    "你会写matlab马",
+    "设计一个matlab代码：对音频文件进行fft",
+    "多通道的怎么写",
+    "你会写arduino吗",
+    "能设计一串长一点的代码解微分方程吗"
+  ],
+  "142": [
+    "模仿下列例题，给出10个代码填空题，要求考察numpy和pandas,                                                                                                                  \nfillblank_1.py\n#给定代码不准删除修改，所有填空使用一个表达式完成。\n\nimport numpy as np\nnp.random.seed(6)  ##设定随机种子，不要改动！\n\n#生成成绩：随机整数，范围在[40,100)之间，二维数组，每行数据依次为某同学的语文、数学、英语这三门课的成绩\nscores=______【1】______\n\n#请输入一个分数：\nscore=int(input(\"请输入分数：\"))\n\n#统计输入分数以下的成绩信息：\nmask=(scores<score)\n\n#分别统计语文、数学、英语三门课在分数段以下的人数\nprint(\"语文、数学、英语三门课在{}分以下的人数分别为：\".format(score), ______【2】______) \n\n#统计三门课都及格的人数\nprint(\"三门课都在{}分以上的人数为：\".format(score), ______【3】______)  \n\n#输出三门课的平均分\nprint(\"三门课的平均分分别为：\", ______【4】______)\n\n#输出三门课平均分在输入成绩以上的人数\nprint(\"三门课平均分在{}分以上的人数为：\".format(score), ______【5】______) \n",
+    "np.all函数的作用\n",
+    "给我个例子解释这一函数\n",
+    "import matplotlib.pyplot as plt\nfrom sklearn.cluster import KMeans # 导入聚类库\nimport pandas as pd\nimport numpy as np\nplt.rcParams['font.sans-serif'] = ['SimHei'] \nplt.rcParams['axes.unicode_minus'] = False\n\n# 加载数据集并提取数据\ndata_ori = pd.read_csv('housing.csv')  # 读取housing.csv数据\ndata = ________【3】______ # 提取聚类需要使用的三列元素\n\n# 从键盘输入聚类数\n#n = int(input(\"请输入聚类数：\\n\"))\n\n# 聚类训练\n#res = KMeans(________【4】________, random_state = 1)  # 设置聚类数为n\n#res.fit(data)\n\n# 展示结果\n#labels = res.labels_ \n#centers = ________【5】________  # 设置所有质心\n#print(centers)\n",
+    "Kmeans中的n_clusters一般如何设定\n",
+    "#pro1.py\n#导入相关包\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nplt.rcParams['font.sans-serif'] = ['SimHei'] \nplt.rcParams['axes.unicode_minus'] = False\n\ndata1=pd.read_csv('student_score.csv')\nscores=data1[['语文','数学','英语']]\nprint(scores.head())\n为什么我的上述代码出现UnicodeDecodeError: 'utf-8' codec can't decode byte 0xba in position 2: invalid start byte的报错\n",
+    "df=pd.read_csv(\"student_score.csv\",sep=\"\\t\",encoding=\"gbk\",usecols=[\"语文\",\"数学\",\"英语\"])，能否为我详细解读下这段代码\n",
+    "为什么我不在代码中加入sep=\"\\t\"就会发生Usecols do not match columns, columns expected but not found: ['数学', '语文', '英语']的报错\n",
+    "np.NaN的作用\n"
+  ],
+  "143": [
+    "请问python有哪些基本数据结构",
+    "能否给一个python的快排代码",
+    "什么是分组交换网"
+  ],
+  "149": [
+    "选择sklearn.datasets中的鸢尾花据集，\nimport sklearn.datasets as ds\nX,y = ds.load_iris(return_X_y=True)\n或者\ndata = ds.load_iris()\nX = data.data\ny = data.target\n\n2 对数据集进行归一化处理\n3 按7：3生成训练集和测试集\n4 设置K值\n5 使用KNN算法训练模型\n6 使用测试集计算预测值\n7 计算模型的评估值：A、P、R、F1",
+    "选择sklearn.datasets中的鸢尾花据集，\nimport sklearn.datasets as ds\nX,y = ds.load_iris(return_X_y=True)\n或者\ndata = ds.load_iris()\nX = data.data\ny = data.target\n\n2 对数据集进行归一化处理\n3 按7：3生成训练集和测试集\n4 设置K值\n5 使用KNN算法训练模型\n6 使用测试集计算预测值\n7 计算模型的评估值：A、P、R、F1\n代码实现\n"
+  ],
+  "153": [
+    "array和ndaray有什么区别\n",
+    "pandas模块中，用DataFrame[]访问数据时，关于方括号中步长为1的切片的使用，读取切片技能访问连续的行也能访问连续的列吗"
+  ],
+  "154": [
+    "knn是什么东西",
+    "pd.plotting.scatter_matrix(iris_dataframe, figsize=(15, 15), marker='o', \nhist_kwds={'bins': 20}, s=60, alpha=.8)解释这段代码",
+    "wine_df.groupby('target').mean()解释这行代码\n",
+    "ax_left=fig1v3.add_subplot(2,2,1, title='父子身高的关系')\nax_right=fig1v3.add_subplot(2,2,2, title='母子身高的关系')\nax_left.scatter(father_data,son_data)\nax_right.scatter(mather_data,son_data)\nx = np.arange(father_data.min(), father_data.max())\nax_left.plot(x, x, \"-\", color=\"r\",linewidth=5.0)\nax_right.plot(x, x, \"-\", color=\"r\",linewidth=5.0)解释这段代码"
+  ],
+  "156": [
+    "你好，能教教我kmeans怎么使用吗",
+    "第8题： 以下哪个统计指标能反映机器学习结果的自身不稳定性？\nA: 偏差\n\nB: 方差\n\nC: 平方差\n\nD: 以上均可"
+  ],
+  "157": [
+    "pandas例题\n",
+    "agg函数使用",
+    "聚类是什么？\n"
+  ],
+  "158": [
+    "import numpy as np\nnp.random.seed(6)  ##设定随机种子，不要改动！\n\n#生成成绩：随机整数，范围在[40,100)之间,二维数组，每行数据依次为某同学的语文、数学、英语这三门课的成绩\nscores=np.random.randint(40,100,(50,3)) #(1)\n#请输入分数：\nscore=int(input(\"请输入分数：\"))\n\n#统计输入分数以下的成绩信息：\nmask=scores<score\n\n#分别统计语文、数学、英语三门课在分数段以下的人数\nprint(\"语文、数学、英语三门课在{}分以下的人数分别为：\".format(score),mask.sum(axis=0)) #(2)\n\n#统计三门课都及格的人数\nprint(\"三门课都在{}分以上的人数为：\".format(score),sum(mask.sum(axis=1)==0))  #(3)\n\n#输出三门课的平均分\nprint(\"三门课的平均分分别为：\",scores.mean(axis=0))#(4)\n\n#输出三门课平均分在输入成绩以上的人数\nprint(\"三门课平均分在{}分以上的人数为：\".format(score),sum(scores.mean(axis=1)>score))  #(5)\n\n",
+    "mask.sum(axis=0)沿列方向求和，得到每门课低于输入分数的人数。\n为何不是输出一个求和的列表",
+    "sum(mask.sum(axis=1)==0)\n\n",
+    "mask.sum(axis=0)\n其他方法表示",
+    "intArr2D=np.array([    #将序列类型(列表或元组)转换成2维数组\n    li1,\n    li2\n])\nprint(repr(intArr2D))\nprint(type(intArr2D))\nprint(intArr2D)\nrepr啥意思",
+    "第3题： 在使用numpy模块时，假设数组 arr 的数据类型为 int8，经过执行 np.int16(arr) 语句后，说法正确的是：_________。\nA: 如果新的数据类型比原数据类型所占内存小，arr 将被转换成新的数据类型\nB: 如果新的数据类型比原数据类型所占内存大，arr 将被转换成新的数据类型\nC: 不管何种情况，arr 的数据类型依然保持原样\nD: 不管何种情况，arr 的数据类型一定会变成新的数据类型\n",
+    "np.transpose",
+    "逻辑运算符 &（与）、|（或）、~（非）\n举例说明",
+    "a = np.array([2,5,8])\nb = np.array([3,4,9])\nr1 = a < b\nr2 = a > b\nr3 = r1 & r2\nr4 = np.logical_not(r1,r2)\nprint(r1,r2,r3,r4)",
+    "Prod=intArr4x4.prod() #缺省轴，全部展开成一维后计算\nprint('总积=',Prod)\ncumprodOfRow=intArr4x4.cumprod(axis=1) #每行的累计过程\nprint('水平方向的每行的累积过程=\\n',cumprodOfRow,sep='')",
+    "mat1=np.array([[1,2],[3,4]])\nmat2=np.array([[5,6],[7,8]])\nprint(mat1.dot(mat2))",
+    "列表citylist是城市名称，rainfalllist是一个二维列表，记录了每个城市的一年12月的每月的降水量，\n\ncitylist = ['上海', '北京', '天津', '喀什', '西安', '重庆', '广州', '韶关', '海口']\n\nrainfalllist = [[52, 20, 104, 60, 199, 167, 158, 211, 14, 92, 2, 14], [0, 2, 7, 5, 46, 69, 196, 120, 116, 10, 0, 3], [0, 0, 4, 13, 60, 115, 216, 199, 51, 44, 4, 0], [1, 0, 2, 41, 3, 4, 6, 1, 3, 5, 0, 3], [4, 1, 43, 32, 22, 20, 71, 24, 24, 64, 8, 0], [30, 21, 21, 27, 118, 225, 167, 51, 77, 101, 46, 39], [42, 71, 78, 104, 71, 219, 275, 316, 168, 305, 6, 5], [67, 140, 115, 136, 134, 470, 128, 120, 17, 128, 22, 30], [36, 14, 63, 37, 198, 273, 252, 272, 190, 313, 125, 19]]",
+    "1)求每个城市的平均降水量，输出如下：[ 91. 48. 59. 6. 26. 77. 138. 126. 149.]",
+    "2)求每个月的平均降水量，输出如下：[ 26. 30. 49. 51. 95. 174. 163. 146. 73. 118. 24. 13.]\n\n",
+    "求每个城市最大降水量和最小降水量出现的月份（不考虑重复，即有重复降水量，只输出一个即可）,输出如下:\n\n最大降水量: ['上海8月' '北京7月' '天津7月' '喀什4月' '西安7月' '重庆6月' '广州8月' '韶关6月' '海口10月']\n最小降水量: ['上海11月' '北京1月' '天津1月' '喀什2月' '西安12月' '重庆2月' '广州12月' '韶关9月' '海口2月']",
+    "将rainfall_array按照axis=0分割，求最大值的索引，再加上城市",
+    "r=np.array(rainfalllist)\ncitylist = ['上海', '北京', '天津', '喀什', '西安', '重庆', '广州', '韶关', '海口']\nn=r.argmax(axis=0)\nn=n+1\nb=np.char.add(citylist,n.astype(str))\nprint(b)",
+    "np.char.add(citylist,n.astype(str))\n有问题吗",
+    "np.argmax(rainfall_array)和rainfall_array.argmax()区别\n"
+  ],
+  "161": [
+    "mask.sum怎么用？",
+    "DataFrame[]访问数据时，关于方括号中步长为1的切片只能访问连续的行\n",
+    "a.程序功能： 读入“housing.csv”文件，按注释要求对某地区收入中位数进行聚类，以展示该地区的收入情况。聚类需要使用数据集中的三列元素：longitude，经度；latitude，纬度；median_income，收入中位数。\n\nb.原始程序如下图所示： \n# fillblank_2.py\n\n# 导入库\nimport matplotlib.pyplot as plt\nfrom ________【1】________ import KMeans # 导入聚类库\nimport pandas as pd\nimport numpy as np\nplt.rcParams['font.sans-serif'] = ['SimHei'] \nplt.rcParams['axes.unicode_minus'] = False\n\n# 加载数据集并提取数据\ndata_ori = ________【2】________  # 读取housing.csv数据\ndata = ________【3】________ # 提取聚类需要使用的三列元素\n\n# 从键盘输入聚类数\nn = int(input(\"请输入聚类数：\\n\"))\n\n# 聚类训练\nres = KMeans(________【4】________, random_state = 1)  # 设置聚类数为n\nres.fit(data)\n\n# 展示结果\nlabels = res.labels_ \ncenters = ________【5】________  # 设置所有质心\nprint(centers)\n\n\n \n\n\n",
+    "print设置小数\n"
+  ],
+  "162": [
+    "你可以完成这道题吗\n按照下列要求，设计完成一个程序。在Python环境下，用IDLE打开c:\\ecnu_ks\\root\\pro1.py程序源文件，将程序源代码另存为“ans31-学号-姓名.py”，存放在c:\\ecnu_ks\\root中。\n程序功能：按下列要求读入数据文件，对数据进行清洗，并进行统计和分析，最后输出如样张所示的可视化图形并保存。\n（1）读取c:\\ecnu_ks\\root中的文件student_score.csv中的学生语文、数学、英语三列成绩数据,注意csv文件中的分隔符，且文件中含中文字符；\n（2）数据清洗：清除三门课全部缺考的学生，将部分缺考的学生成绩设为0；\n（3）数据统计和分析：输入一个总成绩，输出比这个总成绩高的人数；\n（4）绘制出数学成绩各成绩段的饼图并保存为\"pie.png\"，如样张所示。\n提示：注意读取数据的数据类型。\n",
+    "mask=df==\"缺考\" 其中第一个“=”的用途是什么？",
+    "plt.rcParams['font.sans-serif'] = ['SimHei'] \nplt.rcParams['axes.unicode_minus'] = False\n这两行代码的意思是什么",
+    "df=pd.read_csv(\"student_score.csv\",sep=\"\\t\",encoding=\"gbk\",usecols=[\"语文\",\"数学\",\"英语\"])\n为什么要使用gbk而非UTF-8，usecols又是干什么用的？",
+    "df[mask]=np.NaN\n",
+    "df.dropna(how=\"all\",inplace=True) ",
+    "print(metrics.confusion_matrix(y_test, y_pred)) 这个是做什么用的\n"
+  ],
+  "166": [
+    "fig2 , ax2v2=plt.subplots(2,2,\n\tsharex=True,\n\tsharey=True) \n这里的fig2与ax2v2是什么意思",
+    "plt与subplots有什么区别",
+    "把原来2*2的画布，虚拟为 2 行 1列，索引位置号 2\n这要怎么写代码"
+  ],
+  "169": [
+    "plt.figure()中dpi=144是什么意思\n\n",
+    "plt.scatter(train_X[:,0],train_X[:,1],c=train_Y,s=100)这是什么意思\n"
+  ],
+  "172": [
+    "Pandas知识点总结",
+    "创建DataFrame： 创建一个DataFrame，包含以下数据：姓名（'Name'）、年龄（'Age'）、性别（'Gender'）。至少包含三个人的信息。\n\n读取CSV文件： 使用Pandas读取一个CSV文件，并显示前5行数据。\n\n数据选择： 从DataFrame中选择年龄大于30的所有记录。\n\n处理缺失数据： 假设你的DataFrame中有缺失值，使用Pandas的方法来删除所有包含缺失值的行。\n\n数据类型转换： 将DataFrame中的'Age'列的数据类型从整数转换为浮点数。\n\n数据合并： 有两个DataFrame，一个包含学生的姓名和成绩，另一个包含学生的姓名和班级。将这两个DataFrame按姓名合并。\n\n数据分组与聚合： 对一个包含销售数据的DataFrame进行分组，按产品类别计算每个类别的总销售额。\n\n数据透视： 使用Pandas的透视表功能，创建一个透视表，显示每个销售员在不同月份的销售总额。\n\n时间序列数据处理： 读取一个包含日期和销售额的CSV文件，将日期设置为索引，并按月对销售额进行汇总。\n\n数据去重： 从DataFrame中删除重复的行。",
+    "Series.sort_index(ascending=True,inplace=False)\n解释",
+    "Series中倒序使用索引方法",
+    "如果是s.iloc[-3:]输出什么，遵循左闭右开吗",
+    "仔细讲讲倒序中索引对应关系", 
+    "这里的d和e是Series s的最后两个元素，但是e不包括在内。\n为何",
+    "例如，如果你的Series s是这样的：\n\ns = pd.Series([1, 2, 3, 4, 5], index=['a', 'b', 'c', 'd', 'e'])\n那么，s.iloc[-3:]的输出将会是：\n\nd    4\ne    5\ndtype: int64\n这里的d和e是Series s的最后两个元素，但是e不包括在内。\n为何你输出来的是里面有e，不是不包含吗",
+    "为已有的Dataframe添加columns",
+    "不，是为一个没有列标签的DataFrame添加列标签",
+    "caocao=s4CN.copy() 是深拷贝吗",
+    "sunquan['姓名','字']='孙权','仲谋'  #注意：两个单值的修改\nsunquan[['武力','智力']]=82,85  #注意：一个包含两个离散值的object的修改  从修改上和上句效果一致，但语法不一致。\n修改区别",
+    "sunquan['姓名','字']='孙权','仲谋'  #注意：两个单值的修改\nsunquan[['武力','智力']]=82,85  #注意：一个包含两个离散值的object的修改  从修改上和上句效果一致，但语法不一致。\n第二个多加一个中括号啥意思",
+    "sunquan.loc['姓名', '字'] = '孙权', '仲谋'\n报错了，怎么修改",
+    "我想同时修改两个标签的值呢",
+    "ratings = pd.read_csv(fpathCsv, error_bad_lines=False)"
+  ],
+  "174": [
+    "#跨了JPT的代码段之后，如果要想在存在的画布绘图，必须重新激活画布\nplt.figure(figScatter2v1)  #创建新的或者激活\nplt.axes(axes2) \nscatter_z = df_sanguo[\"life\"] #生命值\ncolors = scatter_z*10\narea = scatter_z*0.8  #核心，点的大小会反映生命值大小\nplt.scatter(scatter_x,scatter_y,c=colors,marker=\"o\",s=area)\nplt.title(titleForStep12,fontsize=15,fontdict=fontCN)\nplt.xlabel(\"军事能力\",)\nplt.ylabel(\"武力值\")\nplt.xticks(np.arange(0,100,10))\nplt.yticks(np.arange(0,100,10))\nplt.grid(True,axis=\"y\")\nplt.tight_layout()\nplt.savefig(titleForStep12+\".png\",dpi=300)解释这段代码",
+    "print(df_sanguo.head(5))\nprint(len(df_sanguo))  #总计500人\ngrp=df_sanguo.groupby(\"country\")  #按国家分组\ntemp=grp.count() # 每个国家的人数\nprint(temp[\"id\"])\nlabels_country=temp.index #行索引号是country,这里可以获取所有数据的国家列表\ndata_sanguo=temp[\"id\"]\nplt.pie(data_sanguo,\n    labels=labels_country,\n\tautopct='%.1f%%') #饼内百分数格式\nplt.title(\"三国武将国家分布\",fontdict=fontCN)\nplt.legend(labels_country,title='三国武将国家分布',\n           loc='lower right' , #右下角\n           bbox_to_anchor= (0,0.5) #图例的右下角坐标占比\n)解释这行代码",
+    "die1_values=np.random.randint(1,7,10000)\nprint(die1_values)\ndie2_values=np.random.randint(1,7,10000)\ndie3_values=die1_values+die2_values\nplt.hist(die3_values)解释这行代码"
+  ],
+  "175": [
+    "在numpy模块中，下列哪个函数可以用于返回最大值的索引？",
+    " 在NumPy中，以下哪个函数用于创建一个指定形状和填充默认值的数组？",
+    "在NumPy中，如何获取数组的维度？",
+    "在NumPy中，如何获取数组的维度？\nA：array.shape\nB：array.size\nC：array.dtype\nD：array.itemsize",
+    "在NumPy中，要创建一个从0开始到5（不包括5）的等差数列数组，应使用哪个函数？",
+    "pandas 模块中，df 为一个 DataFrame，对于 df.iloc[1] 和 df[0] 所获取的一行和一列，正确的说法是：_________。\nA：获取的一行、一列，都是一个 Series\nB：获取的一行是 Series，获取的一列必定是一个 DataFrame\nC：获取的一行是 DataFrame，获取的一列必定是一个 Series\nD：获取的一行、一列，都是一个 DataFrame",
+    "pandas 模块中，用 DataFrame[ ] 访问数据时，关于方括号中步长为 1 的切片的使用，正确的说法是：_________。\nA：该切片只能访问连续的行\nB：该切片只能访问连续的列\nC：该切片既能访问连续的行，也能访问连续的列\nD：该切片只能访问离散的行",
+    "Pandas是Python的一个数据分析包，是基于______的一种工具。\nA：Numpy\nB：Dataframe\nC：Matplotlib\nD：ndarray",
+    "Pandas中处理二维数据结构的是_______。\nA：Series\nB：DataFrame\nC：Numpy\nD：Matplotlib",
+    "关于DataFrame下列描述错误的是_______。\nA：可以从字典数据创建 Dataframe。\nB：可以从数组创建 Dataframe。\nC：可以从csv文件中读取数据到DataFrame。\nD：可以处理三维数组。",
+    "在Anaconda中进行第三方库的安装，正确的命令是___________\nA：pip install 包名\nB：conda 包名\nC：conda setup 包名\nD：pip setup 包名",
+    "Anaconda集成的____是一个基于网页的交互式代码编辑软件，可被应用与代码开发、文档编写、代码运行和结果展示的全过程计算。\nA：IDLE\nB：Spyder\nC：Prompt\nD：Jupyter Notebook",
+    "在使用numpy模块时，需创建如下数组： [[1. 0. 0.] [0. 1. 0.] [0. 0. 1.]] 下列正确的语句是：_________。\nA：np.eye(3)\nB：np.zero(3)\nC：np.ones(3)\nD：np.diag(3)",
+    "在使用numpy模块时，已有 arr 数组如下： [[ 1, 2, 3, 4], [ 5, 6, 7, 8], [ 9, 10, 11, 12]] 以下不能访问7，8，11，12的语句是：_________。\nA：\"arr[1:,2:]\"\nB：\"arr[1:,[2,3]]\"\nC：\"arr[[1,2],[2,3]]\"\nD：\"arr[[1,1,2,2],[2,3,2,3]]\"",
+    "在使用numpy模块时， b1=np.array([[1,2],[3,4],[5,6]]) b2=np.ones((3,2)) b3=np.ones((1,2)) b4=np.ones((1,3)) 执行完上述代码后，出错的语句是：_________。\nA：b1+b2\nB：b1+b3\nC：b1+b4\nD：b2+b3",
+    "关于列表与列表之间直接的乘法，正确的说法是：_________。\nA：无论两个列表的行列数如何，只要所有元素都是整型或浮点型，就能直接相乘\nB：两个列表只要是列数相同、所有元素都是整型或浮点型数据，就能直接相乘\nC：只要两个列表的行数和列数都相同，而且所有元素都是整型或浮点型数据，就能直接相乘\nD：列表与列表之间直接相乘一定会引发异常",
+    "pandas 模块中，对于 read_csv() 函数使用时，关于数据分隔符，正确的说法是：_________。\nA：只能用半角的逗号分隔\nB：只能用半角的逗号或制表符分隔\nC：只能用制表符分隔\nD：可以用半角逗号或制表符分隔，也能用其它符号分隔",
+    "使用pandas模块时， a=pd.Series([1,2,3,4],index=list('abcd')) 执行后，a['b':'d']可以访问的元素个数是：_________。",
+    "当前绘图区域分为2行3列，在其中第6个位置添加子图，实现该功能的代码是_____。\nA：plt.add_subplot(2,3,6)\nB：plt.subplots(2,3,6)\nC：plt.add_subplot(2,3)\nD：plt.add_subplot(6)",
+    "使用Matplotlib.pyplot绘图时，关于创建子图的描述，以下哪个选项是正确的？\nA：subplots() 和 add_subplot() 方法同时创建 Figure 和 Axes 对象\nB：add_subplot() 方法只能在已有的 Figure 对象上添加一个子图\nC：subplots() 和 add_subplot() 方法可以指定子图的位置，但不能指定子图的大小\nD：subplots() 方法只能用来创建单一的子图",
+    "对于 matplotlib 模块，说法正确的是：______。\nA：它能绘制 2D和3D的图形\nB：它只能绘制 2D 的图形\nC：它能绘制 2D、3D 和 4D的图形\nD：它只能绘制 1D 的图形",
+    "关于 matplotlib 模块中绘制散点图的函数或方法 ，下列正确的是：______。\nA：scatter()\nB：Scatter()\nC：plot()\nD：points()",
+    "将一批数据按大小分成多个区段，欲观察各个区段中数据出现的次数（频度），比较适合的图形是：_______。\nA：散点图\nB：柱状图\nC：直方图\nD：饼图",
+    "描述\n程序功能：文件smartphone.xlsx存放了各手机品牌的2020年四个季度在上海的销售数量和销售金额表。 编程实现以下功能：\n\n（1）读入smartphone.xlsx的工作表。\n\n（2）利用groupby函数对数据按“公司”分组。\n\n（3）利用agg聚合函数，统计每个公司在上海全年的销售数量和销售金额。得到聚合结果result\n\n（3）设定result的columns为['年销售数量','年销售金额']。\n\n（4）result的'年销售金额'列按降序排列，并把统计result结果输出到文件‘result.xlsx’。\n\n数据文件\nsmartphone.xlsx",
+    "#给定代码不准删除修改，所有填空使用一个表达式完成。\nimport numpy as np\nnp.random.seed(int(input('输入正整数随机种子：\\n')))\n#随机生成 3×30 的数组模拟同学成绩（成绩为40到100分之间的随机整数）\narr = np.random.randint(40,100,(3,30))\n#输出每个班级最高分\nmaxarr= _______【1】_______\nprint(\"1.个班级最高分:\\n\", maxarr )  \n#统计每个班不及格人数\nnum = ______【2】______\n#输出统计每个班不及格人数\nprint(\"2.\\n\",f\"三个班不及格人数依次为： {num} 。\" ) \n",
+    "程序功能 某小学五年级有三个班，每个班级30人，已知他们的某学科成绩。\n\n输出每个班级的最高分。统计每个班不及格人数并输出",
+    "程序功能 某小学五年级有三个班，每个班级30人，已知他们的某学科成绩。\n\n输出每个班级的最高分。统计每个班不及格人数并输出三个班级所有不及格人数",
+    "描述\n按照下列要求，设计完成一个程序。\n\n程序功能：计算学生总分和平均分，并根据优秀条件，查找优秀学生并按要求输出。\n\n在程序内的列表Data中，存放着武侠班同学门的期中考试成绩，每位同学的成绩包括：学号、姓名、语文成绩、数学成绩、英语成绩这 5 项数据。\n\n编写函数 calcScore，要求函数有一个列表形参，用于接收某同学的除学号和姓名以外的后 3 项数据，计算并以元组形式返回该生的总分和平均分。\n\n主程序从键盘接收优秀学生的平均分（含），读取 Data 列表，\n\n利用函数 calcScore 计算每个学生的总分和平均分，从中查询优秀学生的名单并输出，\n\n输出内容包括姓名、总分和平均分，并按序号从小到大的默认顺序输出；\n\n每个队占据一行，姓名左对齐，最小宽度为 8 位，与总分、平均分之间均以制表符分隔，总分和平均分保留小数点后2位输出。\n\npro2.py 中已有的代码行不可改动。\n\n程序运行示例：\n\n请输入优秀生平均分条件（含）：\n\n90\n\n达到优秀的学生有：\n\n姓名总分平均分\n\n郭靖270.0090.00\n\n黄蓉281.0093.67\n\n令狐冲280.0093.33\n\n杨过274.0091.33\n\n王语嫣270.0090.00\n#在下方填写定义函数 calcScore 的代码\n\n#主程序\nData=[\n['10001','郭靖',80,90,100],\n['10002','黄蓉',88,95,98],\n['10003','令狐冲',89,96,95],\n['10004','岳灵珊',75,90,80],\n['10005','东方不败',77,86,85],\n['10006','任我行',70,80,83],\n['10007','岳不群',70,82,85],\n['10008','杨过',90,92,92],\n['10009','小龙女',80,90,85],\n['10010','萧峰',88,86,90],\n['10011','段誉',85,80,88],\n['10012','王语嫣',90,90,90]\n]\nx=input(\"请输入优秀生平均分条件（含）：\\n\")\nprint(\"满足查询要求的球队有：\")\nprint(\"{:<8s}\\t{}\\t{}\".format(\"姓名\",\"总分\",\"平均分\"))\n###在下方继续填写主程序代码",
+    "怎么解决'>=' not supported between instances of 'float' and 'str'",
+    "怎么解决No such file or directory: 'result.xlsx'\n"
+  ],
+  "176": [
+    "power.sort_index(ascending=False)这个代码有什么用\n",
+    "numpy可以被修改吗\n",
+    "caocao=s4CN.copy()  # 注意这里为什么不用caocao=s4CN",
+    "单值和离散值差别\n",
+    "解释一下sunquan['姓名','字']='孙权','仲谋'  #注意：两个单值的修改\nsunquan[['武力','智力']]=82,85  #注意：一个包含两个离散值的object的修改  从修改上和上句效果一致，但语法不一致。\n",
+    "不同情况下ecoding 应该用什么\n"
+  ],
+  "181": [
+    "ratings = pd.read_csv(fpathCsv, error_bad_lines=False)\n解释",
+    "fpathCsv = \"./tvbboy_datas/testratings.csv\"\nratings = pd.read_csv(fpathCsv, enconding=\"utf-8\")\n报错了",
+    "gbk\nutf-8\n区别"
+  ],
+  "184": [
+    "ratings1 = pd.read_csv(fpathCsv, skiprows=[1])\n如何同时忽略多行数据\n",
+    "指定多行呢",
+    "ratings= pd.read_csv(fpath, error_bad_lines=False, encoding='utf-8')\n为何有error_bad_lines=False就报错",
+    "encoding里的gbk和utf-8有啥区别",
+    "pd.set_option('display.max_rows', None)\nw=pd.read_csv(fpathCsv,encoding='gbk',\n              usecols=['userId','rating'], #选择读入的列\n             index_col='userId') #将日期列作为行索引名   显示的结果中，视觉上，列名rating和行索引名“ueserID”非同一行\nprint(w)\n解释代码",
+    "pvuvTxt = pd.read_csv(\n    fpathTxt,\n    sep=\"\\t\",\n    header=None,\n    #nrows=3,\n    names=['pdate', 'pv', 'uv']\n)\n解释代码",
+    "pvuvXlss=pd.read_excel(fpathXls,\n    ['Sheet1','Sheet2'], #选取两张工作表\n    usecols=(0,2)) #选取 第 0，第 2列\nprint(type(pvuvXlss))\nfor name,sheet in pvuvXlss.items(): #遍历字典\n    print(name, sheet, sep='\\n**************************\\n‘）\n解释代码",
+    "举个例子",
+    "pvuvXlss=pd.read_excel(fpathXls,\n    ['Sheet1','Sheet2'], #选取两张工作表\n    usecols=(0,2)) #选取 第 0，第 2列\nprint(type(pvuvXlss))\nfor name,sheet in pvuvXlss.items(): #遍历字典\n    print(name, sheet, sep='\\n**************************\\n‘）\n用举例子形式解释代码",
+    "之后把pvuvXlss转化为dataframe",
+    "把series转化为数组\n",
+    "where 可以用在series中吗",
+    "import pandas as pd\nimport numpy as np\nsales_data = pd.Series(\n    [45.2, \".gif\", 92.25, 87.5, \".jpg\", 73.1, 85.4, 98.3, 79.6, 82.9, \".jpg\"]\n    )\n1.数据清理：检查并修正数据中的错误。有些数据点（假设不知道多少，只知道他们是字符串数据类型）明显不是有效的销售额数据，将其替换为该月份的销售额的算术平均值。",
+    "to_numeric函数和errors='coerce'  不用这些",
+    "可以用where来解决吗",
+    "tmp=[x  for x in sales_data.values if (type(x)==float)]\nmean=sum(tmp)/len(tmp)\nfor i in range(len(sales_data.values)):\n    if type(sales_data.values[i])==str:\n        sales_data.values=mean\nprint(sales_data)\n为何报错",
+    "df.to_csv(\"homework_series.csv\",header=0)",
+    "weather=[[\"2011/1/1\",\"4℃\",\"0℃\"],\n         \t[\"2011/1/2\",\"4℃\",\"-1℃\"],\n         \t[\"2011/1/3\",\"6℃\",\"1℃\"],\n         \t[\"2011/1/1\",\"4℃\",\"0℃\"],\n         \t[\"2011/1/2\",\"3℃\",\"1℃\"]]                 \nw=pd.DataFrame(weather,\n  columns=[\"日期\",\"最高气温\",\"最低气温\"])\n#对所有元素进行字符串的处理，必须使用str.方法/str[…]\nw.最高气温=w.最高气温.str[:-1]\nw\n解释代码",
+    "dataframe如何处理重复的数据行,举例说明",
+    "df.to_excel(\"./tvbboy_datas/student_excel_clean.xlsx\", index=False)\n解释代码",
+    "wNew1=pd.concat([w1,w2])  #两个合并对象必须是DF吗？",
+    "w2=pd.DataFrame(weather2,columns=cols)\n解释",
+    "print('每组记录行行数：\\n', grpby.size() ,sep='')\nprint(\"-\"*30)\nprint('每组每列计数：\\n',grpby.count(),sep='')  #每组每列不包含y缺失值的数据个数\nprint(\"-\"*30)\nprint('每组每列的中位数：\\n',grpby.median(),sep='')\nsep的用处",
+    "df = pd.DataFrame(\n        { '动物':['游隼', '鹦鹉', '猎豹',  '游隼', '猎豹','游隼'],\n        '速度':[380,24,120,370,130,368],\n        '重量':[3.5,1,80,3,82,np.nan],\n        '状态':['野生',np.nan,'野生','豢养','野生','豢养']\n        }\n  )\ngrpby=df.groupby(\"动物\")\nprint('每组记录行行数：\\n', grpby.size() ,sep='')\n这里的sep作用",
+    "grpby.agg('min')\n解释",
+    " method='spearman\n解释",
+    "filename = './tvbboy_datas/students.csv'\ndfstu = pd.read_csv(filename,index_col=0)\ndfstu.head()",
+    "def markstu(score):\n    if score >= 90:\n        return \"优秀\"\t   \n    if score >= 80:\n        return \"良好\"\t   \n    if score >= 60:\n        return \"及格\"\t   \n    return \"不及格\"\nmark_result = df.平均分.map(markstu)\ndf['评定'] = mark_result\ndf.head()\n解释",
+    "第9题： pandas 模块中，df 为一个 DataFrame，对于 df.iloc[1] 和 df[0] 所获取的一行和一列，正确的说法是：_________。\nA: 获取的一行、一列，都是一个 Series\n\nB: 获取的一行是 Series，获取的一列必定是一个 DataFrame\n\nC: 获取的一行是 DataFrame，获取的一列必定是一个 Series\n\nD: 获取的一行、一列，都是一个 DataFrame",
+    "第10题： pandas 模块中，对 DataFrame 的排序方法 sort_values，正确的说法是：_________。\nA: 只能作用于 DataFrame 对象本身，不返回新的 DataFrame\n\nB: 只能返回一个新的 DataFrame，对象本身不发生任何改变\n\nC: 肯定返回一个新的 DataFrame，并同时作用于对象本身\n\nD: 可以用参数决定是否作用于对象本身",
+    "第2题： pandas 模块中，用 concat 函数合并数据时，正确的说法是：_________。\nA: 只能合并行\n\nB: 只能合并列\n\nC: 能合并行，也能合并列\n\nD: 只能合并来自于文件的数据\n\n正确答案：C"
+  ],
+  "185": [
+    "fit(X,y)：利用X作为训练集，y作为目标值进行模型训练\npredict(X)：预测某个给定数据X的标签类\nkneighbors(X=None,n_neighbors=None,return_distance=True])：查找X中一个或多个点的n_neighbors个邻居。\n",
+    "KNN算法是监督学习、非监督学习、半监督学习？\n",
+    "df.loc[df['xname']=='virginica', 'xid'] = 1\n",
+    "怎么计算accuracy_score",
+    "plt.rcParams['axes.unicode_minus']=False",
+    "plt.scatter(X[:,0],X[:,1],c=Y,s=100)",
+    "X,Y=make_blobs(n_samples=100,random_state=0,cluster_std=0.6)。X,Y返回什么类型的变量\n",
+    "neighbors=clf.kneighbors(data, n_neighbors=None,return_distance=True)",
+    "scores = cross_val_score(knn, iris.data[:150], iris.target[:150], cv=5)",
+    "特征和目标值什么意思",
+    "数据集的键是什么\n",
+    "#获得酒数据集\nfrom sklearn.datasets import load_wine\nwine_dataset = load_wine()\nprint(\"红酒数据集中的键：\",wine_dataset.keys())\ndata = wine_dataset[\"data\"]\ntarget = wine_dataset[\"target\"]\nfrom sklearn.model_selection import train_test_split\nX_train, X_test, y_train, y_test = train_test_split(data, target, random_state = 0)  #伪随机数每次不同\nprint(\"X_train\",X_train.shape, \"X_test\", X_test.shape)\n为什么这里X_train (133, 13) X_test (45, 13)\ny_train (133,) y_test (45,)",
+    "为什么它的shape是X_train (133, 13) X_test (45, 13)\ny_train (133,) y_test (45,)\n",
+    "import sklearn.datasets as ds\ndata = ds.load_iris()\nX = data.data\nY = data.target\nimport pandas as pd\nfrom sklearn import preprocessing\nmin_max_scaler= preprocessing.MinMaxScaler()\nX_train_minmax=min_max_scaler.fit_transform(X)\nY_train_minmax=min_max_scaler.fit_transform(Y)\nfrom sklearn.model_selction import train_test_split\nX_train, X_test, Y_train, Y_test = train_test_split(X_train_minmax,Y_train_minmax,test_size=0.3,random_state=1)\nprint('输入k值')\nk=int(input())\nfrom sklearn import neighbors\nknn= neighbors.KNeighborsClassifier(n_neighbors=k)\nknn.fit(X_train,Y_train)\nY_predict=knn.predict(X_test)\nfrom sklearn import metrics\nA=metrics.accuracy_score(Y_test,Y_predict)\nP=metrics.precision_score(Y_test,Y_predict)\nR=metrics.recall_score(Y_test,Y_predict)\nF1=metrics.f1_score(Y_test,Y_predict)\nprint(f'A={A:.2f},P={P:.2f},R={R:.2f},F1={F1:.2f}')哪里错了\n",
+    "ValueError                                Traceback (most recent call last)\nCell In[6], line 9\n      7 min_max_scaler= preprocessing.MinMaxScaler()\n      8 X_train_minmax=min_max_scaler.fit_transform(X)\n----> 9 Y_train_minmax=min_max_scaler.fit_transform(Y)\n     10 from sklearn.model_selction import train_test_split\n     11 X_train, X_test, Y_train, Y_test = train_test_split(X_train_minmax,Y_train_minmax,test_size=0.3,random_state=1)\n\nFile /opt/conda/lib/python3.11/site-packages/sklearn/utils/_set_output.py:295, in _wrap_method_output.<locals>.wrapped(self, X, *args, **kwargs)\n    293 @wraps(f)\n    294 def wrapped(self, X, *args, **kwargs):\n--> 295     data_to_wrap = f(self, X, *args, **kwargs)\n    296     if isinstance(data_to_wrap, tuple):\n    297         # only wrap the first output for cross decomposition\n    298         return_tuple = (\n    299             _wrap_data_with_container(method, data_to_wrap[0], X, self),\n    300             *data_to_wrap[1:],\n    301         )\n\nFile /opt/conda/lib/python3.11/site-packages/sklearn/base.py:1098, in TransformerMixin.fit_transform(self, X, y, **fit_params)\n   1083         warnings.warn(\n   1084             (\n   1085                 f\"This object ({self.__class__.__name__}) has a `transform`\"\n   (...)\n   1093             UserWarning,\n   1094         )\n   1096 if y is None:\n   1097     # fit method of arity 1 (unsupervised transformation)\n-> 1098     return self.fit(X, **fit_params).transform(X)\n   1099 else:\n   1100     # fit method of arity 2 (supervised transformation)\n   1101     return self.fit(X, y, **fit_params).transform(X)\n\nFile /opt/conda/lib/python3.11/site-packages/sklearn/preprocessing/_data.py:450, in MinMaxScaler.fit(self, X, y)\n    448 # Reset internal state before fitting\n    449 self._reset()\n--> 450 return self.partial_fit(X, y)\n\nFile /opt/conda/lib/python3.11/site-packages/sklearn/base.py:1474, in _fit_context.<locals>.decorator.<locals>.wrapper(estimator, *args, **kwargs)\n   1467     estimator._validate_params()\n   1469 with config_context(\n   1470     skip_parameter_validation=(\n   1471         prefer_skip_nested_validation or global_skip_validation\n   1472     )\n   1473 ):\n-> 1474     return fit_method(estimator, *args, **kwargs)\n\nFile /opt/conda/lib/python3.11/site-packages/sklearn/preprocessing/_data.py:490, in MinMaxScaler.partial_fit(self, X, y)\n    487 xp, _ = get_namespace(X)\n    489 first_pass = not hasattr(self, \"n_samples_seen_\")\n--> 490 X = self._validate_data(\n    491     X,\n    492     reset=first_pass,\n    493     dtype=_array_api.supported_float_dtypes(xp),\n    494     force_all_finite=\"allow-nan\",\n    495 )\n    497 data_min = _array_api._nanmin(X, axis=0)\n    498 data_max = _array_api._nanmax(X, axis=0)\n\nFile /opt/conda/lib/python3.11/site-packages/sklearn/base.py:633, in BaseEstimator._validate_data(self, X, y, reset, validate_separately, cast_to_ndarray, **check_params)\n    631         out = X, y\n    632 elif not no_val_X and no_val_y:\n--> 633     out = check_array(X, input_name=\"X\", **check_params)\n    634 elif no_val_X and not no_val_y:\n    635     out = _check_y(y, **check_params)\n\nFile /opt/conda/lib/python3.11/site-packages/sklearn/utils/validation.py:1035, in check_array(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator, input_name)\n   1028         else:\n   1029             msg = (\n   1030                 f\"Expected 2D array, got 1D array instead:\\narray={array}.\\n\"\n   1031                 \"Reshape your data either using array.reshape(-1, 1) if \"\n   1032                 \"your data has a single feature or array.reshape(1, -1) \"\n   1033                 \"if it contains a single sample.\"\n   1034             )\n-> 1035         raise ValueError(msg)\n   1037 if dtype_numeric and hasattr(array.dtype, \"kind\") and array.dtype.kind in \"USV\":\n   1038     raise ValueError(\n   1039         \"dtype='numeric' is not compatible with arrays of bytes/strings.\"\n   1040         \"Convert your data to numeric values explicitly instead.\"\n   1041     )\n\nValueError: Expected 2D array, got 1D array instead:\narray=[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.\n 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.\n 1. 1. 1. 1. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2.\n 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2. 2.\n 2. 2. 2. 2. 2. 2.].\nReshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.",
+    "为什么min_max_scaler.fit_transform一定要二维数组",
+    "knn.fit(X_train,Y_train)这一步哪里错\n",
+    "怎么测量数组长度",
+    "import sklearn.datasets as ds\ndata = ds.load_iris()\nX = data.data\nY = data.target\nY=Y.reshape(-1, 1)\nimport pandas as pd\nfrom sklearn import preprocessing\nmin_max_scaler= preprocessing.MinMaxScaler()\nX_train_minmax=min_max_scaler.fit_transform(X)\nY_train_minmax=min_max_scaler.fit_transform(Y)\nfrom sklearn.model_selection import train_test_split\nX_train, X_test, Y_train, Y_test = train_test_split(X_train_minmax,Y_train_minmax,test_size=0.3,random_state=1)\nprint('输入k值')\nk=int(input())\nfrom sklearn import neighbors\nknn= neighbors.KNeighborsClassifier(n_neighbors=k)\nknn.fit(X_train,Y_train)最后一步哪里错",
+    "ValueError                                Traceback (most recent call last)\nCell In[19], line 1\n----> 1 knn.fit(X_train,Y_train)\n\nFile /opt/conda/lib/python3.11/site-packages/sklearn/base.py:1474, in _fit_context.<locals>.decorator.<locals>.wrapper(estimator, *args, **kwargs)\n   1467     estimator._validate_params()\n   1469 with config_context(\n   1470     skip_parameter_validation=(\n   1471         prefer_skip_nested_validation or global_skip_validation\n   1472     )\n   1473 ):\n-> 1474     return fit_method(estimator, *args, **kwargs)\n\nFile /opt/conda/lib/python3.11/site-packages/sklearn/neighbors/_classification.py:238, in KNeighborsClassifier.fit(self, X, y)\n    216 @_fit_context(\n    217     # KNeighborsClassifier.metric is not validated yet\n    218     prefer_skip_nested_validation=False\n    219 )\n    220 def fit(self, X, y):\n    221     \"\"\"Fit the k-nearest neighbors classifier from the training dataset.\n    222 \n    223     Parameters\n   (...)\n    236         The fitted k-nearest neighbors classifier.\n    237     \"\"\"\n--> 238     return self._fit(X, y)\n\nFile /opt/conda/lib/python3.11/site-packages/sklearn/neighbors/_base.py:500, in NeighborsBase._fit(self, X, y)\n    497 else:\n    498     self.outputs_2d_ = True\n--> 500 check_classification_targets(y)\n    501 self.classes_ = []\n    502 # Using `dtype=np.intp` is necessary since `np.bincount`\n    503 # (called in _classification.py) fails when dealing\n    504 # with a float64 array on 32bit systems.\n\nFile /opt/conda/lib/python3.11/site-packages/sklearn/utils/multiclass.py:221, in check_classification_targets(y)\n    213 y_type = type_of_target(y, input_name=\"y\")\n    214 if y_type not in [\n    215     \"binary\",\n    216     \"multiclass\",\n   (...)\n    219     \"multilabel-sequences\",\n    220 ]:\n--> 221     raise ValueError(\n    222         f\"Unknown label type: {y_type}. Maybe you are trying to fit a \"\n    223         \"classifier, which expects discrete classes on a \"\n    224         \"regression target with continuous values.\"\n    225     )\n\nValueError: Unknown label type: continuous. Maybe you are trying to fit a classifier, which expects discrete classes on a regression target with continuous values.",
+    "fit(x,y)对训练集目标集维数有什么要求\n",
+    "Y=Y.reshape(-1, 1)什么意思"
+  ],
+  "186": [
+    "帮我用python程序实现下面要求：1 选择sklearn.datasets中的鸢尾花据集，\nimport sklearn.datasets as ds\nX,y = ds.load_iris(return_X_y=True)\n或者\ndata = ds.load_iris()\nX = data.data\ny = data.target\n\n2 对数据集进行归一化处理\n3 按7：3生成训练集和测试集\n4 设置K值\n5 使用KNN算法训练模型\n6 使用测试集计算预测值\n7 计算模型的评估值：A、P、R、F1",
+    "帮我用python程序实现下面要求：从sklearn的datasets获得波士顿房价数据集。利用线性回归对波士顿房价进行预测。\n\n1 获得波士顿房价数据集\nfrom sklearn import datasets\n‘’‘清空sklearn环境下所有数据’’’\ndatasets.clear_data_home()\nX,y = datasets.load_boston(return_X_y=True)\n\n或者\nBunt = datsets.load_boston()\nX = Bunt.data\nY = Bunt.target\n\n2 按80%的训练集20%的测试集随机划分样本，训练模型，输出训练集的模型得分score，\n3 利用测试样本对模型进行评估， 使用均方误差。\n\nfrom sklearn.metrics import mean_squared_error\ntrain_mse = mean_squared_error(y_train, y_train_pred)\ntest_mst = mean_squared_error(y_test, y_test_pred)"
+  ],
+  "187": [
+    "导入numpy模块和pandas模块\n使用Series类的创建 index=['chi','math','eng','phy','che'] scorelist = ([90,95,98,88,76] 创建改学生的成绩Sereis对象stu_score\n把stu_score的索引改为['语文','数学','英语','物理','化学']\n把该生的数学成绩的值设为100，计算该学生的数学、物理和化学成绩和并输出",
+    "导入numpy模块和pandas模块\n使用Series类的创建 index=['chi','math','eng','phy','che'] scorelist = ([90,95,98,88,76] 创建改学生的成绩Sereis对象stu_score\n把stu_score的索引改为['语文','数学','英语','物理','化学']\n把该生的数学成绩的值设为100，输出stu_score\n",
+    "创建索引index = ['刘六','孙八','李四','王五','张三'] values=[65,85,70,90,88] 的五位同学的数学成绩Series对象stu_math_ser\n删除‘张三’\n使用函数sort_index对index按升序排序",
+    "创建索引index = ['刘六','孙八','李四','王五','张三'] values=[65,85,70,90,88] 的五位同学的数学成绩Series对象stu_math_ser\n删除‘张三’\n输出前三名的学生姓名和成绩",
+    "创建索引index = ['刘六','孙八','李四','王五','张三'] values=[65,85,70,90,88] 的五位同学的数学成绩Series对象stu_math_ser\n删除‘张三’\n输出前三名的学生姓名和成绩\n输出成绩在80分（包括80分）以上的学生姓名和成绩",
+    "从csv文件读入数据，创建DataFrame对象 已知student.csv保存了某班学生的考试成绩，第一行是标题，读入文件创建DataFrame对象df， 并输出前5行\n",
+    "读入student.csv文件创建DataFrame对象df，并且学号为行索引 并输出前6行",
+    "读入student.csv文件创建DataFrame对象df， 设定列索引columns = ['no','chi','mat','eng'] 并使得学号为行索引，忽略第一行标题数据 并输出前6行"
+  ],
+  "188": [
+    "# 导入相关库\nfrom sklearn.cluster import KMeans\n# 载入数据集\ndata = np.array([[2, 10], [2, 5], [8, 4], [5, 8], [7, 5], [6, 4], [1, 2], [4, 9], [0, 7], [5, 4]])\n# 定义聚类数目\nk = int(input(\"请定义聚类数目：\\n\"))\n# 创建 k-Means 模型\nkmeans = KMeans(n_clusters=k) # 设置聚类数为k\n# 使用数据训练模型\nkmeans.fit(data)\n# 输出每个样本所属的簇\nlabels = kmeans.lables_\n# 输出聚类中心点的坐标\ncentroids = kmeans.cluster_centers_ \nprint(\"每个样本的簇标签：\", labels)\nprint(\"聚类中心点的坐标：\", centroids,sep='\\n')",
+    "# 从键盘输入随机数编号k，示例中k=42\nk = int(input(\"请输入随机数编号：\\n\"))\n# 加载本地数据集\ndata = pd.read_csv('seeds.csv')\n#①将数据集划分为不含类别的特征集和类别标签集\nx=data.iloc[:,:-1]#选择除了最后一列的所有列\ny=data.iloc[:,-1]#选择最后一列作为标签\n#②划分数据集为训练集和测试集，测试样本占20%，随机数编号为k\nx_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=k)\n#③创建KNN分类器，指定邻居数量为3，在训练集上训练分类器，并在测试集上对结果进行预测\nknn=KNeighborsClassifier(n_neighbors=3)\nknn.fit(x_train,y_train)\ny_pred=knn.predict(x_test)\n#④计算召回率并输出分类结果评价指标，其中召回率评价值的平均值计算方式average设为'macro'，保留四位小数\nreport=metrics.classification_report(y_test,y_pred,target_names=data['class'].unique(),average='macro',digits=4)\nprint(report)",
+    "import pandas as pd\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.neighbors import KNeighborsClassifier\nfrom sklearn import metrics\n\n# 从键盘输入随机数编号k，示例中k=42\nk = int(input(\"请输入随机数编号：\\n\"))\n\n# 加载本地数据集\ndata = pd.read_csv('seeds.csv')\n\n# ①将数据集划分为不含类别的特征集和类别标签集\nx = data.iloc[:, :-1]  # 选择除了最后一列的所有列\ny = data.iloc[:, -1]   # 选择最后一列作为标签\n\n# ②划分数据集为训练集和测试集，测试样本占20%，随机数编号为k\nx_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=k)\n\n# ③创建KNN分类器，指定邻居数量为3，在训练集上训练分类器，并在测试集上对结果进行预测\nknn = KNeighborsClassifier(n_neighbors=3)\nknn.fit(x_train, y_train)\ny_pred = knn.predict(x_test)\n\n# ④计算召回率并输出分类结果评价指标，其中召回率评价值的平均值计算方式average设为'macro'，保留四位小数\nreport = metrics.classification_report(y_test, y_pred, target_names=data['class'].unique(), average='macro', digits=4)\nprint(report)\n\n\n修改，要求正确输出#里面的内容\n",
+    "import pandas as pd\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.neighbors import KNeighborsClassifier\nfrom sklearn import metrics\n\n# 从键盘输入随机数编号k，示例中k=42\nk = int(input(\"请输入随机数编号：\\n\"))\n\n# 加载本地数据集\ndata = pd.read_csv('seeds.csv')\n\n# ①将数据集划分为不含类别的特征集和类别标签集\nx = data.iloc[:, :-1]  # 选择除了最后一列的所有列\ny = data.iloc[:, -1]   # 选择最后一列作为标签\n\n# ②划分数据集为训练集和测试集，测试样本占20%，随机数编号为k\nx_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=k)\n\n# ③创建KNN分类器，指定邻居数量为3，在训练集上训练分类器，并在测试集上对结果进行预测\nknn = KNeighborsClassifier(n_neighbors=3)\nknn.fit(x_train, y_train)\ny_pred = knn.predict(x_test)\n\n# ④计算召回率并输出分类结果评价指标，其中召回率评价值的平均值计算方式average设为'macro'，保留四位小数\nreport = metrics.classification_report(y_test, y_pred, target_names=data['class'].unique(), average='macro', digits=4)\nprint(report)\n\n修改错误的地方\n"
+  ],
+  "189": [
+    "第3题： 使用pandas模块时， a=pd.Series([1,2,3,4],index=list('abcd')) 执行后，a['b':'d']可以访问的元素个数是：_________。\nA: 1\n\nB: 2\n\nC: 3\n\nD: 4\n\n正确答案：C",
+    "不是左闭右开吗",
+    "那不是2个吗",
+    "用iloc呢",
+    "loc呢",
+    "axis=1,axis=0表示啥"
+  ],
+  "191": [
+    "如何理解数据集三个属性，data,target,feature_names",
+    "为我详细解释下列代码                                                                                                                                                                                                \n                     iris_df = pd.DataFrame(data= np.c_[iris['data'], iris ['target']],\n                     columns= iris['feature_names'] + ['target'])",
+    "怎么按行连接两个数组\n",
+    ".mean()是什么意思\n",
+    "如何对一个dataframe数据集填补缺失值\n",
+    "我不太理解什么叫使用字典指定每一列的填补值，能再给我个具体些的例子吗\n",
+    "我不太理解以下代码的意思：\tax_1=fig2v2_boston.add_subplot(2,2,1, title='房价和住宅用地所占比率zn关系')\n\tax_1.scatter(boston_dataframe.ZN,boston_target)  能否为我解释下\n",
+    "我不太理解以下代码的意思,尤其是中间的Y_train=0,0和Y_train==0,1:                                                                                                              \n plt.scatter(X_train[Y_train==0,0],X_train[Y_train==0,1], color='r',label=\"abnormal\")",
+    "下列这段代码是什么意思：PointX=X_train[:,0]\nPointY=X_train[:,1]\ndistances2=np.sqrt((PointX-x[0])**2+(PointY-x[1])**2)\n",
+    "我不太理解X_train[:,0]中：的含义",
+    "我不太理解以下代码中para、best_params等的含义，能为我详细解释下吗？                                                                                                          \n KNN1 = KNeighborsClassifier()\n# 得到训练集合和验证集合, 8: 2\niris_train_X, iris_test_X, iris_train_Y, iris_test_Y = train_test_split(iris.data, iris.target, test_size=0.2,random_state= 2020)\npara = range(1,12)\nparam_dict = {\"n_neighbors\": para}  # 预测K值\n#通过交叉验证，优化KNN模型\nKNN1 = GridSearchCV(KNN1, param_grid=param_dict, cv=10)\nKNN1.fit(iris_train_X, iris_train_Y)\n#最佳参数\nprint(\"最佳参数：\\n\",KNN1.best_params_)",
+    ".score(iris_test_X, iris_test_Y)的作用\n"
+  ],
+  "193": [
+    "sklearn.neighbors是什么",
+    "KNN怎么写",
+    "KNN数据可视化"
+  ],
+  "194": [
+    "解释下什么是.intercept_和.coef_\n",
+    "在KNN中一般如何选取para的范围\n"
+  ],
+  "195": [
+    "在KNN中一般如何选取para的范围",
+    "from sklearn.datasets import load_iris  #鸢尾花\niris = load_iris()\n#  定义自己的KNN分类器实例\nKNN1 = KNeighborsClassifier()\n# 得到训练集合和验证集合, 8: 2\niris_train_X, iris_test_X, iris_train_Y, iris_test_Y = train_test_split(iris.data, iris.target, test_size=0.2,random_state= 2020)\npara = range(1,12)\nparam_dict = {\"n_neighbors\": para}  # 预测K值\n#通过交叉验证，优化KNN模型\nKNN1 = GridSearchCV(KNN1, param_grid=param_dict, cv=10)\nKNN1.fit(iris_train_X, iris_train_Y)\n#最佳参数\nprint(\"最佳参数：\\n\",KNN1.best_params_) \n在上述代码中为什么定义para在(1,12)的范围",
+    "为我详细解释下列代码：kmeans_kwargs = {\n    \"init\": \"random\",\n    \"n_init\": 10,\n    \"max_iter\": 300,\n    \"random_state\": 42,\n}\nsse = []\nfor k in range(2, 9):\n    kmeans = KMeans(n_clusters=k, **kmeans_kwargs)\n    kmeans.fit(X)\n    sse.append(kmeans.inertia_)\nplt.plot(range(2, 9), sse)\nplt.xticks(range(2, 9))\nplt.xlabel(\"K\")\nplt.ylabel(\"SSE\")\n",
+    "如何对KNN的分类结果输出混淆矩阵",
+    "import numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom sklearn import datasets, preprocessing, model_selection, neighbors, metrics\nfrom sklearn.neighbors import KNeighborsClassifier\n# 从键盘输入随机数编号n，示例中n=42\nn = int(input(\"请输入随机数编号：\\n\"))\n\n# 加载并导入手写数字数据集\ndigits = datasets.load_digits()\nX = digits.data\ny = digits.target\n\n# 实例化转换器并对X进行数据标准化\nstandard_scaler = preprocessing.StandardScaler()\n\nX2 = standard_scaler.fit_transform(X)\n# 划分训练集和测试集，测试样本占30%，随机数编号为n\nTRAIN_X,TRAIN_Y,TEST_X,TEST_Y=train_test_split(X2,y,test_size=0.3,random_state=n)\n# 创建KNN分类器并在训练集上进行训练，最邻点数量为5，并在测试集上对结果进行预测\nKNN1=KNeighborsClassifier(n_neighbors=5)\nKNN1.fit(TRAIN_X,TRAIN_Y)\nPRE_Y=KNN1.predict(TEST_X)\n# 计算精确率并输出混淆矩阵，其中精确率评价值的平均值计算方式average设为'macro'，保留四位小数\naverage1=KNN1.scores(TEST_X,TEST_Y)\nmacro=np.around(average1,decimals=4)\ncm = confusion_matrix(TEST_Y, PRE_Y)\nprint(cm)\n为什么我的代码在KNN1.fit(TRAIN_X,TRAIN_Y)处报错？\n",
+    "我的上述程序在KNN1.fit(TRAIN_X,TRAIN_Y)出现了以下报错：Found input variables with inconsistent numbers of samples: [1257, 540]",
+    "# 导入相关库\nfrom sklearn.cluster import Kmeans\nimport numpy as np\n# 载入数据集\ndata = np.array([[2, 10], [2, 5], [8, 4], [5, 8], [7, 5], [6, 4], [1, 2], [4, 9], [0, 7], [5, 4]])\n# 定义聚类数目\nk = int(input(\"请定义聚类数目：\\n\"))\n# 创建 k-Means 模型\nkmeans = KMeans(n_clusters=k, random_state = 1) # 设置聚类数为k\n# 使用数据训练模型\nkmeans.fit(data)\n# 输出每个样本所属的簇\nlabels = kmeans.labels_\n# 输出聚类中心点的坐标\ncentroids = kmeans.cluster_centers_\nprint(\"每个样本的簇标签：\", labels)\nprint(\"聚类中心点的坐标：\", centroids,sep='\\n')\n为什么我无法导入Kmeans",
+    "怎么将将数据集划分为不含类别的特征集和类别标签集\n",
+    "本题所使用的为 Seeds 数据集（seeds.csv 文件），该数据集包含了种子的面积、周长、紧凑度、种子长度、种子宽度、不对称系数、种子凹槽长度和类别八列数据。其中类别列包含 3 种标签。现在我们想要使用 KNN 分类器对种子进行分类。\n程序功能：按下列要求对 Seeds 数据集进行切分，训练数据并输出评价指标。\n（1）导入库和数据集，将数据集划分为不含类别（class列）的特征集和类别（class 列）标签集；\n（2）划分数据集为训练集和测试集，测试样本占 20%，随机数编号为 k，示例中 k=42；\n（3）创建 KNN 分类器，指定邻居数量为 3，在训练集上训练分类器，并在测试集上对结果进行预测；\n（4）计算召回率并输出分类结果评价指标，其中召回率评价值的平均值计算方式average设为'macro'，保留四位小数。",
+    "为什么我提供\"C:\\Users\\ZZZ\\Desktop\\seeds.csv\"的文件地址会出现以下报错SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \\UXXXXXXXX escape"
+  ],
+  "198": [
+    "sklearn.model_selection 的train_test_split 函数\n",
+    "knn 中的邻居信息",
+    "knn 中distance 的获取\n",
+    "knn中设置K值，K值怎么定",
+    " 选择sklearn.datasets中的鸢尾花据集，\nimport sklearn.datasets as ds\nX,y = ds.load_iris(return_X_y=True)\n或者\ndata = ds.load_iris()\nX = data.data\ny = data.target\n\n2 对数据集进行归一化处理\n3 按7：3生成训练集和测试集\n4 设置K值\n5 使用KNN算法训练模型\n6 使用测试集计算预测值\n7 计算模型的评估值：A、P、R、F1",
+    "datasets.clear_data_home()",
+    "mean_squared_error范围"
+  ],
+  "200": [
+    "堆排序是什么",
+    "假设检验"
+  ],
+  "201": [
+    "介绍一下np.ones()",
+    "x:=x-a,这里x:表示什么\n",
+    "什么意思\nmodel = SGDRegressor(loss='squared_loss', max_iter=20000)",
+    "LinearRegression.score是什么",
+    "ImportError                               Traceback (most recent call last)\nCell In[4], line 2\n      1 from sklearn import datasets\n----> 2 Bunt = datasets.load_boston()\n      3 X = Bunt.data\n      4 y = Bunt.target\n\nFile /opt/conda/lib/python3.11/site-packages/sklearn/datasets/__init__.py:157, in __getattr__(name)\n    108 if name == \"load_boston\":\n    109     msg = textwrap.dedent(\"\"\"\n    110         `load_boston` has been removed from scikit-learn since version 1.2.\n    111 \n   (...)\n    155         <https://www.researchgate.net/publication/4974606_Hedonic_housing_prices_and_the_demand_for_clean_air>\n    156         \"\"\")\n--> 157     raise ImportError(msg)\n    158 try:\n    159     return globals()[name]\n\nImportError: \n`load_boston` has been removed from scikit-learn since version 1.2.\n\nThe Boston housing prices dataset has an ethical problem: as\ninvestigated in [1], the authors of this dataset engineered a\nnon-invertible variable \"B\" assuming that racial self-segregation had a\npositive impact on house prices [2]. Furthermore the goal of the\nresearch that led to the creation of this dataset was to study the\nimpact of air quality but it did not give adequate demonstration of the\nvalidity of this assumption.\n\nThe scikit-learn maintainers therefore strongly discourage the use of\nthis dataset unless the purpose of the code is to study and educate\nabout ethical issues in data science and machine learning.\n\nIn this special case, you can fetch the dataset from the original\nsource::\n\n    import pandas as pd\n    import numpy as np\n\n    data_url = \"http://lib.stat.cmu.edu/datasets/boston\"\n    raw_df = pd.read_csv(data_url, sep=\"\\s+\", skiprows=22, header=None)\n    data = np.hstack([raw_df.values[::2, :], raw_df.values[1::2, :2]])\n    target = raw_df.values[1::2, 2]\n\nAlternative datasets include the California housing dataset and the\nAmes housing dataset. You can load the datasets as follows::\n\n    from sklearn.datasets import fetch_california_housing\n    housing = fetch_california_housing()\n\nfor the California housing dataset and::\n\n    from sklearn.datasets import fetch_openml\n    housing = fetch_openml(name=\"house_prices\", as_frame=True)\n\nfor the Ames housing dataset.\n\n[1] M Carlisle.\n\"Racist data destruction?\"\n<https://medium.com/@docintangible/racist-data-destruction-113e3eff54a8>\n\n[2] Harrison Jr, David, and Daniel L. Rubinfeld.\n\"Hedonic housing prices and the demand for clean air.\"\nJournal of environmental economics and management 5.1 (1978): 81-102.\n<https://www.researchgate.net/publication/4974606_Hedonic_housing_prices_and_the_demand_for_clean_air>",
+    "from sklearn import datasets\ndatasets.clear_data_home()\nBunt = datasets.load_boston()\nX = Bunt.data\ny = Bunt.target\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom sklearn.metrics import mean_squared_error\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.linear_model import LinearRegression\nX_train, X_test, y_train, y_test = train_test_split(X,y, test_size=0.2, random_state=1)\nmodel=LinearRegression()\nmodel.fit(X_train, y_train)\nscore=model.score()\nprint(score)\ny_train_pred=model.predict(X_train)\ny_test_pred=model.predict(X_test)\ntrain_mse = mean_squared_error(y_train, y_train_pred)\ntest_mst = mean_squared_error(y_test, y_test_pred)\nprint(f'train_mse:{train_mse},test_mst:{test_mst}')\n哪里错？",
+    "ImportError                               Traceback (most recent call last)\nCell In[5], line 3\n      1 from sklearn import datasets\n      2 datasets.clear_data_home()\n----> 3 X,y = datasets.load_boston(return_X_y=True)\n      4 import numpy as np\n      5 import matplotlib.pyplot as plt\n\nFile /opt/conda/lib/python3.11/site-packages/sklearn/datasets/__init__.py:157, in __getattr__(name)\n    108 if name == \"load_boston\":\n    109     msg = textwrap.dedent(\"\"\"\n    110         `load_boston` has been removed from scikit-learn since version 1.2.\n    111 \n   (...)\n    155         <https://www.researchgate.net/publication/4974606_Hedonic_housing_prices_and_the_demand_for_clean_air>\n    156         \"\"\")\n--> 157     raise ImportError(msg)\n    158 try:\n    159     return globals()[name]\n\nImportError: \n`load_boston` has been removed from scikit-learn since version 1.2.\n\nThe Boston housing prices dataset has an ethical problem: as\ninvestigated in [1], the authors of this dataset engineered a\nnon-invertible variable \"B\" assuming that racial self-segregation had a\npositive impact on house prices [2]. Furthermore the goal of the\nresearch that led to the creation of this dataset was to study the\nimpact of air quality but it did not give adequate demonstration of the\nvalidity of this assumption.\n\nThe scikit-learn maintainers therefore strongly discourage the use of\nthis dataset unless the purpose of the code is to study and educate\nabout ethical issues in data science and machine learning.\n\nIn this special case, you can fetch the dataset from the original\nsource::\n\n    import pandas as pd\n    import numpy as np\n\n    data_url = \"http://lib.stat.cmu.edu/datasets/boston\"\n    raw_df = pd.read_csv(data_url, sep=\"\\s+\", skiprows=22, header=None)\n    data = np.hstack([raw_df.values[::2, :], raw_df.values[1::2, :2]])\n    target = raw_df.values[1::2, 2]\n\nAlternative datasets include the California housing dataset and the\nAmes housing dataset. You can load the datasets as follows::\n\n    from sklearn.datasets import fetch_california_housing\n    housing = fetch_california_housing()\n\nfor the California housing dataset and::\n\n    from sklearn.datasets import fetch_openml\n    housing = fetch_openml(name=\"house_prices\", as_frame=True)\n\nfor the Ames housing dataset.\n\n[1] M Carlisle.\n\"Racist data destruction?\"\n<https://medium.com/@docintangible/racist-data-destruction-113e3eff54a8>\n\n[2] Harrison Jr, David, and Daniel L. Rubinfeld.\n\"Hedonic housing prices and the demand for clean air.\"\nJournal of environmental economics and management 5.1 (1978): 81-102.\n<https://www.researchgate.net/publication/4974606_Hedonic_housing_prices_and_the_demand_for_clean_air>哪里错了？\n",
+    "datasets内置什么数组"
+  ],
+  "203": [
+    "1 文件students2.csv记录了某班同学的学号、平时成绩、期中成绩和期末成绩，\n\n使用pandas读入文件students2.csv的数据创建Dataframe对象df,要求如下：\n\n1）文件第一列学号为df的行索引\n\n2）df的列索引为文件的第一行数据",
+    "设置df的行索引名为“学号”，设置df的列索引名称为“成绩”，\n\n输出df的shape属性\n\n输出df的元素的变量类型\n\n输出df的前10行数据\n\n输出df的后7行数据",
+    "iloc[]操作 取得奇数行的人工智能成绩信息并输出",
+    "用list输出1到100的所有素数"
+  ],
+  "204": [
+    "读取studentInfo.xlsx文件，完成以下要求\n\n（1）将5张表拼接为一个DataFrame对象（名称为stu），去除序号列，输出stu结果",
+    "程序功能：按下列要求读入数据文件，对数据进行清洗，并进行统计和分析，最后输出如样张所示的可视化图形并保存。\n（1）读取文件 “student_score.csv”（gbk编码） 中的所有成绩数据，注意 csv 文件中的分隔符。\n（2）数据清洗：将所有缺考的学生成绩设为 0。\n（3）数据统计和分析：输入一个整数 k，打印输出语文成绩前 k 名学生的所有信息。\n\n2 程序运行结果如下：\n\n>>>\n\n请输入一个整数：\n\n5\n\n语文成绩前5名学生的所有信息：\n\n学号    姓名  语文  数学  英语  体育  思政\n\n0  10124510220    杨铭  98.0  63.0  59.0  37.0  38.0\n\n1  10124510215  孙洋洋  98.0  76.0  42.0  88.0  51.0\n\n2  10124510103  蒋美琳  95.0  64.0  70.0  55.0  79.0\n\n3  10124510431    吴鹏  93.0  67.0  67.0  55.0  36.0\n\n4  10124510651  黄震宇  93.0  71.0  73.0  56.0  36.0"
+  ],
+  "206": [
+    "#fillblank_1.py\n#给定代码不准删除修改，所有填空使用一个表达式完成。\nimport numpy as np\n##从键盘输入起点、终点\n(start,end)=input(\"请输入起点、终点(整数)：\\n\").split(\",\")\n##创建数组，将起点到终点划分为等间隔的50个点\narr=np.randint(star,end,(1,50))\n#将数组变形为5*10\narr=arr.reshape(5,10)\nprint(arr,end='\\n\\n')\n#将数组中的数转换为32位整数\narr=\nprint(arr)\n#打印数组中的奇数\nmask=arr \nprint(\"数组中的奇数为：\",arr[mask])\n#求所有数的平均值\nprint(\"所有数的平均值为：\", ______【5】______)\n",
+    "\n#fillblank_1.py\n#给定代码不准删除修改，所有填空使用一个表达式完成。\nimport numpy as np\n##从键盘输入起点、终点\n(start,end)=input(\"请输入起点、终点(整数)：\\n\").split(\",\")\n##创建数组，将起点到终点划分为等间隔的50个点\narr=______【1】______\n#将数组变形为5*10\narr=______【2】______\nprint(arr,end='\\n\\n')\n#将数组中的数转换为32位整数\narr=______【3】______\nprint(arr)\n#打印数组中的奇数\n______【4】______  \nprint(\"数组中的奇数为：\",arr[mask])\n#求所有数的平均值\nprint(\"所有数的平均值为：\", ______【5】______)",
+    "# fillblank_2.py\nimport matplotlib.pyplot as plt\nfrom sklearn.cluster import KMeans\nfrom sklearn import datasets\n# 加载数据集\nwine = datasets.load_wine()\nX = wine.data #特征数据集\n# 从键盘输入聚类数\nt=int(input(\"请输入聚类数：\\n\"))\n# 创建KMeans聚类器,聚类数为t\nkmeans = KMeans(________【1】________, random_state=11)\n# 在数据集上拟合聚类器\n________【2】________\n# 获取聚类中心和样本所属聚类标签\ncenters = ________【3】________\nlabels = ________【4】________\n#展示结果，用特征数据中的前两个维度绘制已分类数据散点图，将图保存为\"cluster.png\"，聚类中心点形状为★\nprint(centers)\nprint(labels)\nplt.scatter(X[:, 0], X[:, 1], c=labels)\nplt.scatter(centers[:, 0], centers[:, 1], ________【5】________, s=200, linewidths=3, color='r')\nplt.savefig('cluster.png')\nplt.show()",
+    "程序功能：按下列要求读入数据文件，对数据进行清洗，并进行统计和分析，最后输出如样张所示的可视化图形并保存。\n（1）读取文件 “class_student_score.csv”（gbk 编码） 中的所有数据，注意 csv 文件中的分隔符。\n（2）数据清洗：删除所有包含缺考成绩“NaN”的行。\n（3）数据统计和分析：以“班级”分组统计每门课的平均分，输入班级号（1-5），输出该班级每门课的平均分。\n（4）用 matplotlib 中的 bar 函数绘制各班级语文平均分柱状图（柱子宽度为 0.6）并保存为“bar.png”，如样张所示。\n提示：注意读取数据的数据类型。"
+  ],
+  "208": [
+    "什么是优先级队列",
+    "常见排序算法的时间复杂度分别是多少"
+  ],
+  "209": [
+    "哪个不是深度学习的常见应用领域？\n",
+    "sigmoid函数的导函数der_sigmoid是",
+    "单个神经元分类模型，不能实现的逻辑门问题的是？",
+    "k均值聚类算法属于",
+    "深度学习的描述",
+    "#给定代码不准删除修改，所有填空使用一个表达式完成。\nimport numpy as np\nnp.random.seed(6)\n#生成成绩：随机整数，均值73，均方差10，每行数据依次为某同学的语文、数学两门课的成绩，共40人。\nscores=\n#转化为32位整数：\nscores= \n#输入分数段整数值，一个10的倍数例如70，则输出70~79之间的学生信息\nscore=int(input(\"分数段整数值：\\n\"))\n#打印输出分数段内的成绩信息：\n______【3】______\nprint(\"分数段内所有的成绩：\",scores[mask])\n#计算语文、数学两门课的总分，并打印\nprint(\"每位同学的总分为：\", ______【4】______) \n#输出两门课的最高分\nprint(\"两门课的最高分为：\",______【5】______)",
+    "#给定代码不准删除修改，所有填空使用一个表达式完成。\nimport numpy as np\nnp.random.seed(6)\n#生成成绩：随机整数，均值73，均方差10，每行数据依次为某同学的语文、数学两门课的成绩，共40人。\nscores=\n#转化为32位整数：\nscores= \n#输入分数段整数值，一个10的倍数例如70，则输出70~79之间的学生信息\nscore=int(input(\"分数段整数值：\\n\"))\n#打印输出分数段内的成绩信息：\n______【3】______\nprint(\"分数段内所有的成绩：\",scores[mask])\n#计算语文、数学两门课的总分，并打印\nprint(\"每位同学的总分为：\", ______【4】______) \n#输出两门课的最高分\nprint(\"两门课的最高分为：\",______【5】______)",
+    "from sklearn\nimport numpy as np\n# 载入数据集\ndata = np.array([[2, 10], [2, 5], [8, 4], [5, 8], [7, 5], [6, 4], [1, 2], [4, 9], [0, 7], [5, 4]])\n# 定义聚类数目\nk = int(input(\"请定义聚类数目：\\n\"))\n# 创建 k-Means 模型\nkmeans = KMeans(nclusters=k, random_state = 1) # 设置聚类数为k\n# 使用数据训练模型\nkmeans.fit(data)\n# 输出每个样本所属的簇\nlabels = kmeans.lables_\n# 输出聚类中心点的坐标\ncentroids =kmeans.cluster.center_\nprint(\"每个样本的簇标签：\", labels)\nprint(\"聚类中心点的坐标：\", centroids,sep='\\n')",
+    "#pro1.py\nimport pandas as pd\nimport matplotlib.pyplot as plt\nplt.switch_backend('agg')\nplt.rcParams['font.sans-serif'] = ['SimHei'] \nplt.rcParams['axes.unicode_minus'] = False\npd.set_option('display.unicode.east_asian_width',True)\n#以上代码不得改动\n\n#（1）读取文件student_score.csv中的所有成绩数据,注意csv文件中的分隔符，且文件中含中文字符（设置参数encoding=\"gbk\"）；\n#（2）数据清洗：将所有缺考的成绩设为0；\n#（3）数据统计和分析：输入一个整数k，打印输出语文成绩前 k 名学生的所有信息；\nk=int(input('请输入一个整数：\\n'))\n#（4）绘制语文成绩与数学成绩的散点图，x坐标为语文成绩，y坐标为数学成绩,并保存为\"scatter.png\"，如样张所示。\n",
+    "（1）读取文件 “student_score.csv”（gbk编码） 中的所有成绩数据，注意 csv 文件中的分隔符。\n（2）数据清洗：将所有缺考的学生成绩设为 0。\n（3）数据统计和分析：输入一个整数 k，打印输出语文成绩前 k 名学生的所有信息。\n",
+    "\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.neighbors import KNeighborsClassifier\nfrom sklearn import metrics\nimport pandas as pd\n#以上代码不得更改\n# 从键盘输入随机数编号k，示例中k=42\nk = int(input(\"请输入随机数编号：\\n\"))\n# 加载本地数据集\ndata = pd.read_csv('seeds.csv')\n#①将数据集划分为不含类别的特征集和类别标签集\nX=\n#②划分数据集为训练集和测试集，测试样本占20%，随机数编号为k\n\n#③创建KNN分类器，指定邻居数量为3，在训练集上训练分类器，并在测试集上对结果进行预测\n\n#④计算召回率并输出分类结果评价指标，其中召回率评价值的平均值计算方式average设为'macro'，保留四位小数\n",
+    "程序功能：按下列要求读入数据文件，对数据进行清洗，并进行统计和分析，最后输出如样张所示的可视化图形并保存。\n（1）读取文件 “student_score.csv”（gbk编码） 中的所有成绩数据，注意 csv 文件中的分隔符。\n（2）数据清洗：将所有缺考的学生成绩设为 0。\n（3）数据统计和分析：输入一个整数 k，打印输出语文成绩前 k 名学生的所有信息。\n#pro1.py\nimport pandas as pd\nimport matplotlib.pyplot as plt\nplt.switch_backend('agg')\nplt.rcParams['font.sans-serif'] = ['SimHei'] \nplt.rcParams['axes.unicode_minus'] = False\npd.set_option('display.unicode.east_asian_width',True)\n#以上代码不得改动\n\n#（1）读取文件student_score.csv中的所有成绩数据,注意csv文件中的分隔符，且文件中含中文字符（设置参数encoding=\"gbk\"）；\n\n#（2）数据清洗：将所有缺考的成绩设为0；\n\n#（3）数据统计和分析：输入一个整数k，打印输出语文成绩前 k 名学生的所有信息；\nk=int(input('请输入一个整数：\\n'))\n\n#（4）绘制语文成绩与数学成绩的散点图，x坐标为语文成绩，y坐标为数学成绩,并保存为\"scatter.png\"，如样张所示。\n",
+    "输入一个整数 k，打印输出语文成绩前 k 名学生的所有信息。",
+    "将所有缺考的成绩设为0；"
+  ],
+  "210": [
+    "用随机正态分布生成班级语文、数学两门课程的成绩，班级人数为 40 人，按要求统计分数段信息并输出。\n",
+    "用随机正态分布生成班级语文、数学两门课程的成绩，班级人数为 40 人，按要求统计分数段信息并输出。\n生成成绩：随机整数，均值73，均方差10，每行数据依次为某同学的语文、数学两门课的成绩，共40人，再转化为32位整数：",
+    "生成成绩：随机整数，均值73，均方差10，每行数据依次为某同学的语文、数学两门课的成绩，共40人\n",
+    "用随机正态分布生成班级语文、数学两门课程的成绩，班级人数为 40 人，按要求统计分数段信息并输出。#生成成绩：随机整数，均值73，均方差10，每行数据依次为某同学的语文、数学两门课的成绩，共40人。转化为32位整数：输入分数段整数值，一个10的倍数例如70，则输出70~79之间的学生信息,#计算语文、数学两门课的总分，并打印#输出两门课的最高分"
+  ],
+  "211": [
+    "import numpy as np\n生成成绩：随机整数，均值73，均方差10，每行数据依次为某同学的语文、数学两门课的成绩，共40人。\n转化为32位整数",
+    "Traceback (most recent call last):\n  File \"/judger/run/5d42bd9e2df0432fa63be10e044e24fe/solution.py\", line 5, in <module>\n  File \"mtrand.pyx\", line 988, in mtrand.RandomState.randint\nValueError: low >= high",
+    "# 导入相关库\n________【1】________\nimport numpy as np\n# 载入数据集\ndata = np.array([[2, 10], [2, 5], [8, 4], [5, 8], [7, 5], [6, 4], [1, 2], [4, 9], [0, 7], [5, 4]])\n# 定义聚类数目\nk = int(input(\"请定义聚类数目：\\n\"))\n# 创建 k-Means 模型\nkmeans = KMeans(________【2】________, random_state = 1) # 设置聚类数为k\n# 使用数据训练模型\n________【3】________\n# 输出每个样本所属的簇\nlabels = ________【4】________\n# 输出聚类中心点的坐标\ncentroids = ________【5】________\nprint(\"每个样本的簇标签：\", labels)\nprint(\"聚类中心点的坐标：\", centroids,sep='\\n')",
+    "绘制语文成绩与数学成绩的散点图，x坐标为语文成绩，y坐标为数学成绩,并保存为\"scatter.png\"，如样张所示。",
+    "from sklearn.model_selection import train_test_split\nfrom sklearn.neighbors import KNeighborsClassifier\nfrom sklearn import metrics\nimport pandas as pd\n#以上代码不得更改\n# 从键盘输入随机数编号k，示例中k=42\nk = int(input(\"请输入随机数编号：\\n\"))\n# 加载本地数据集\ndata = pd.read_csv('seeds.csv')\n#①将数据集划分为不含类别的特征集和类别标签集\n\n#②划分数据集为训练集和测试集，测试样本占20%，随机数编号为k\n\n#③创建KNN分类器，指定邻居数量为3，在训练集上训练分类器，并在测试集上对结果进行预测\n\n#④计算召回率并输出分类结果评价指标，其中召回率评价值的平均值计算方式average设为'macro'，保留四位小数\n"
+  ],
+  "212": [
+    "用随机正态分布生成班级语文、数学两门课程的成绩，班级人数为 40 人，按要求统计分数段信息并输出。#给定代码不准删除修改，所有填空使用一个表达式完成。\nimport numpy as np\nnp.random.seed(6)\n#生成成绩：随机整数，均值73，均方差10，每行数据依次为某同学的语文、数学两门课的成绩，共40人。\nscores=______【1】______\n#转化为32位整数：\nscores= ______【2】______\n#输入分数段整数值，一个10的倍数例如70，则输出70~79之间的学生信息\nscore=int(input(\"分数段整数值：\\n\"))\n#打印输出分数段内的成绩信息：\n______【3】______\nprint(\"分数段内所有的成绩：\",scores[mask])\n#计算语文、数学两门课的总分，并打印\nprint(\"每位同学的总分为：\", ______【4】______) \n#输出两门课的最高分\nprint(\"两门课的最高分为：\",______【5】______)\n",
+    "程序功能： 按注释要求对数据进行聚类。\n运行结果如下：\n>>>\n请定义聚类数目：\n2\n每个样本的簇标签： [0 0 1 0 1 1 1 0 0 1]\n聚类中心点的坐标：\n[[2.6 7.8]\n [5.4 3.8]# 导入相关库\n________【1】________\nimport numpy as np\n# 载入数据集\ndata = np.array([[2, 10], [2, 5], [8, 4], [5, 8], [7, 5], [6, 4], [1, 2], [4, 9], [0, 7], [5, 4]])\n# 定义聚类数目\nk = int(input(\"请定义聚类数目：\\n\"))\n# 创建 k-Means 模型\nkmeans = KMeans(________【2】________, random_state = 1) # 设置聚类数为k\n# 使用数据训练模型\n________【3】________\n# 输出每个样本所属的簇\nlabels = ________【4】________\n# 输出聚类中心点的坐标\ncentroids = ________【5】________\nprint(\"每个样本的簇标签：\", labels)\nprint(\"聚类中心点的坐标：\", centroids,sep='\\n')",
+    "CompileError:\nFile \"/judger/run/deb43e90bca649ebbdd4e97189f7527f/solution.py\", line 2\n    import sklearn.cluster import KMeans\n                                ^\nSyntaxError: invalid syntax",
+    "程序功能：按下列要求读入数据文件，对数据进行清洗，并进行统计和分析，最后输出如样张所示的可视化图形并保存。\n（1）读取文件 “student_score.csv”（gbk编码） 中的所有成绩数据，注意 csv 文件中的分隔符。\n（2）数据清洗：将所有缺考的学生成绩设为 0。\n（3）数据统计和分析：输入一个整数 k，打印输出语文成绩前 k 名学生的所有信息。\n\n2 程序运行结果如下：\n\n>>>\n\n请输入一个整数：\n\n5\n\n语文成绩前5名学生的所有信息：\n\n学号    姓名  语文  数学  英语  体育  思政\n\n0  10124510220    杨铭  98.0  63.0  59.0  37.0  38.0\n\n1  10124510215  孙洋洋  98.0  76.0  42.0  88.0  51.0\n\n2  10124510103  蒋美琳  95.0  64.0  70.0  55.0  79.0\n\n3  10124510431    吴鹏  93.0  67.0  67.0  55.0  36.0\n\n4  10124510651  黄震宇  93.0  71.0  73.0  56.0  36.0\n#pro1.py\nimport pandas as pd\nimport matplotlib.pyplot as plt\nplt.switch_backend('agg')\nplt.rcParams['font.sans-serif'] = ['SimHei'] \nplt.rcParams['axes.unicode_minus'] = False\npd.set_option('display.unicode.east_asian_width',True)\n#以上代码不得改动\n\n#（1）读取文件student_score.csv中的所有成绩数据,注意csv文件中的分隔符，且文件中含中文字符（设置参数encoding=\"gbk\"）；\n#（2）数据清洗：将所有缺考的成绩设为0；\n#（3）数据统计和分析：输入一个整数k，打印输出语文成绩前 k 名学生的所有信息；\nk=int(input('请输入一个整数：\\n'))\n#（4）绘制语文成绩与数学成绩的散点图，x坐标为语文成绩，y坐标为数学成绩,并保存为\"scatter.png\"，如样张所示。\n\n\n"
+  ],
+  "213": [
+    "本题所使用的为 Seeds 数据集（seeds.csv 文件），该数据集包含了种子的面积、周长、紧凑度、种子长度、种子宽度、不对称系数、种子凹槽长度和类别八列数据。其中类别列包含 3 种标签。现在我们想要使用 KNN 分类器对种子进行分类。\n程序功能：按下列要求对 Seeds 数据集进行切分，训练数据并输出评价指标。\n（1）导入库和数据集，将数据集划分为不含类别（class列）的特征集和类别（class 列）标签集；\n（2）划分数据集为训练集和测试集，测试样本占 20%，随机数编号为 k，示例中 k=42；\n（3）创建 KNN 分类器，指定邻居数量为 3，在训练集上训练分类器，并在测试集上对结果进行预测；\n（4）计算召回率并输出分类结果评价指标，其中召回率评价值的平均值计算方式average设为'macro'，保留四位小数。",
+    "程序功能：按下列要求读入数据文件，对数据进行清洗，并进行统计和分析，最后输出如样张所示的可视化图形并保存。\n（1）读取文件 “student_score.csv”（gbk编码） 中的所有成绩数据，注意 csv 文件中的分隔符。\n（2）数据清洗：将所有缺考的学生成绩设为 0。\n（3）数据统计和分析：输入一个整数 k，打印输出语文成绩前 k 名学生的所有信息。",
+    "输入一个整数 k，打印输出语文成绩前 k 名学生的所有信息。"
+  ],
+  "215": [
+    "matploylib里dpi是什么\n",
+    "plt.tight_layout()、"
+  ],
+  "217": [
+    "plt.figure(num=None, figsize=None, dpi=None, facecolor=None, ……)\nplt.subplot(nrows, ncols, index, **kwargs)\nfigure.add_subplot(nrows, ncols, index, **kwargs)\n中文解释代码",
+    "fig2v2 , ax2v2=plt.subplots(2,2,\n\tsharex=True,\n\tsharey=True)  #x、y 轴共享属性：刻度标签\n#设置新创建的画布颜色\nfig2v2.set_facecolor(\"#ddffdd\")\nfig2v2.set_size_inches(20,8) #画布尺寸\nplt.plot(x, y)  "
+  ],
+  "218": [
+    "pd.set_option('display.max_rows', None)\nw=pd.read_csv(fpathCsv,encoding='gbk',\n              usecols=['userId','rating'], #选择读入的列\n             index_col='userId') #将日期列作为行索引名   显示的结果中，视觉上，列名rating和行索引名“ueserID”非同一行\nprint(w)\n为什么我的以上代码在第二行报错？",
+    "Usecols do not match columns, columns expected but not found: ['userId']这是什么意思\n",
+    "a = {\"Day\":\"7th\",\"High\":5.0,\"Low\":0.0,\"Wind\":\"东南\"}\na = pd.DataFrame(a)\n为什么我的上述代码无法运行",
+    "如何获得series的转置矩阵\n",
+    "a = {\"Day\":\"7th\",\"High\":5.0,\"Low\":0.0,\"Wind\":\"东南\"}\ntmpS = pd.Series(a,name = '5')\ndfAfterAppendSe = wNew2.append(tmpS )\nprint(dfAfterAppendSe)\n以上代码中，现版本的DataFrame似乎不再支持append函数,怎么修改代码使其正常运作？\n",
+    "以下用于创建一个 3×3 的二维数组，其值域为 0 到 8的语句是________。\nA. array=np.array(0,8,(3,3))\nB. array=np.arange(9).reshape(3,3)\nC. array=np.array([0,1,2],[3,4,5],[6,7,8])\nD. np.arange(0,8).shape=(3,3)\n为我详细分析为什么ACD不行",
+    "我要如何对A和D选项进行修改才能让代码运作\n",
+    "arr=np.arange(1,13).reshape(3,4)\nprint(arr[[1,1,2,2],[2,3,2,3]])为我解释下这段代码什么意思",
+    "如何处理csv文件读取后显示/t的分隔符"
+  ],
+  "219": [
+    "假设我们有一个二维数组 arr = np.array([[1, 2, 3], [4, 5, 6]])，以下哪个操作能够获取数组的第一行？",
+    "对于一个NumPy数组 arr = np.array([1, 2, 3, 4, 5])，如果你想要获取最后一个元素，你会使用什么表达式？"
+  ],
+  "221": [
+    "第2题： 在使用numpy模块时，已有 arr 数组如下： [[ 1, 2, 3, 4], [ 5, 6, 7, 8], [ 9, 10, 11, 12]] 以下不能访问7，8，11，12的语句是：_________。\nA: \"arr[1:,2:]\"\n\nB: \"arr[1:,[2,3]]\"\n\nC: \"arr[[1,2],[2,3]]\"\n\nD: \"arr[[1,1,2,2],[2,3,2,3]]\"\n",
+    "在使用numpy模块时， b1=np.array([[1,2],[3,4],[5,6]]) b2=np.ones((3,2)) b3=np.ones((1,2)) b4=np.ones((1,3)) 执行完上述代码后，出错的语句是：_________。\nA: b1+b2\n\nB: b1+b3\n\nC: b1+b4\n\nD: b2+b3",
+    "使用pandas模块时， a=pd.Series([1,2,3,4],index=list('abcd')) 执行后，a['b':'d']可以访问的元素个数是：_________。\nA: 1\n\nB: 2\n\nC: 3\n\nD: 4",
+    "线性回归模型的各个系数用______属性得到。\nA: coefs\n\nB: coef_\n\nC: intercepts\n\nD: intercept_",
+    " intercept_是什么？\n",
+    " 以下应用场景不属于分类的是：_________。\nA: 垃圾邮件自动识别处理\n\nB: 将未知种类水果划分到不同类\n\nC: 手写数字识别\n\nD: 猫狗图像识别"
+  ],
+  "222": [
+    "用于求numpy一维数组arr中非0元素的位置索引的是\n",
+    "df中dropna函数的thresh参数值为6时表示",
+    "plt中format_string参数表示\n",
+    "plt中一张画布只能有一个绘图区吗"
+  ],
+  "223": [
+    "np.flipud()这是什么函数",
+    "b4=np.ones((1,3)) 展示输出结果"
+  ],
+  "225": [
+    "sklearn.neighbors是什么\n",
+    "KNeighborsClassifier是什么\n",
+    "上面说的KNeighborsClassifier实例是什么意思\n",
+    "交叉验证要用到什么函数\n",
+    "cross_val_score函数都有哪些参数，返回值是什么\n"
+  ],
+  "226": [
+    "KNN根据身高体重如何预测男女性别\n",
+    "列表X_train是收集的一些同学的身高（cm）和体重（kg），列表y_train是这些学生的性别，列表X_test是待预测的人的身高和体重，根据已知数据X_train和y_train，利用KNN算法给出X_test中给出的测试数据的人的性别，并输出结果。\n\nX_train = [[158, 64],[170, 86],[183, 84],[191, 80],[155, 49],[163, 59],[180, 67],[158, 54],[170, 67]]\n\ny_train = ['男', '男', '男', '男', '女', '女', '女', '女', '女']\n\nX_test = [[168, 65],[180, 96],[160, 52],[169, 67]]\n\n运行结果如下：\n\n预测结果  :['女' '男' '女' '女']\n",
+    "如何导入聚类相关库\n",
+    "如何创建K-MEANS模型\n",
+    "如何使用KNN分类器对种子进行分类\n",
+    "如何将数据集分为不含类别的特征集和类别标签集",
+    "本题所使用的为 Seeds 数据集（seeds.csv 文件），该数据集包含了种子的面积、周长、紧凑度、种子长度、种子宽度、不对称系数、种子凹槽长度和类别八列数据。其中类别列包含 3 种标签。现在我们想要使用 KNN 分类器对种子进行分类。\n程序功能：按下列要求对 Seeds 数据集进行切分，训练数据并输出评价指标。\n（1）导入库和数据集，将数据集划分为不含类别（class列）的特征集和类别（class 列）标签集；\n（2）划分数据集为训练集和测试集，测试样本占 20%，随机数编号为 k，示例中 k=42；\n（3）创建 KNN 分类器，指定邻居数量为 3，在训练集上训练分类器，并在测试集上对结果进行预测；\n（4）计算召回率并输出分类结果评价指标，其中召回率评价值的平均值计算方式average设为'macro'，保留四位小数。\n"
+  ]
+}
