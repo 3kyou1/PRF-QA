@@ -60,7 +60,7 @@ def evaluate(dataset_name,compress_model=""):
 
 if __name__ == '__main__':
 
-    dataset_list = ['shuishan.json','allenai.json','stackexchange.json']
+    dataset_list = ['cs101.json','wildchat.json','stackexchange.json']
     compress_model = 'xlm-roberta-large-stackexchange'
     for dataset in dataset_list:
         evaluate(dataset,compress_model)

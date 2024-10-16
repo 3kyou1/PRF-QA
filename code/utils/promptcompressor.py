@@ -17,6 +17,7 @@ def get_compressor(model_name,device_map):
         )
         model.to(device_map)
         return tokenizer, model
+    
     if 'bert' in model_name:
         return PromptCompressor(
             model_name=model_name,

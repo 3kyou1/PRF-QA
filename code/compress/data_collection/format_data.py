@@ -6,7 +6,7 @@ import argparse
 def configure_parser():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--raw_dataset', type=str, default='/home/hang_su/per-agent/code/compress/data_collection/dataset/filter_stackexchange.json',
+    parser.add_argument('--raw_dataset', type=str, default='../../../code/compress/data_collection/dataset/filter_stackexchange.json',
                         help='raw dataset path')
     parser.add_argument('--format_dataset', type=str, default='stackexchange.json',
                         help='format dataset path')

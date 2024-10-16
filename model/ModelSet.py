@@ -3,7 +3,7 @@ from termcolor import colored
 from pyfiglet import Figlet
 
 model_name = 'qwen2:7b-instruct-fp16'
-model_file = '/home/hang_su/per-agent/model/qwen2_7b'
+model_file = '../../../model/qwen2_7b'
 
 
 def print_fancy(text, color='cyan', font='slant'):

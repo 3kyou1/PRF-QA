@@ -1,5 +1,3 @@
-# Copyright (c) 2023 Microsoft
-# Licensed under The MIT License [see LICENSE for details]
 
 import spacy
 import jieba
@@ -119,13 +117,6 @@ class TokenClfDataset(Dataset):
     
 
     def tokenize_and_preserve_labels(self, text, text_labels, tokenizer):
-        """
-        Word piece tokenization makes it difficult to match word labels
-        back up with individual word pieces. This function tokenizes each
-        word one at a time so that it is easier to preserve the correct
-        label for each subword. It is, of course, a bit slower in processing
-        time, but it will help our model achieve higher accuracy.
-        """
 
         tokenized_text = []
         labels = []
@@ -133,14 +124,11 @@ class TokenClfDataset(Dataset):
         assert len(self.split_text(text)) == len(text_labels)
 
         for word, label in zip(self.split_text(text), text_labels):
-            # Tokenize the word and count # of subwords the word is broken into
             tokenized_word = tokenizer.tokenize(word)
             n_subwords = len(tokenized_word)
 
-            # Add the tokenized word to the final tokenized word list
             tokenized_text.extend(tokenized_word)
 
-            # Add the same label to the new list of labels `n_subwords` times
             labels.extend([label] * n_subwords)
 
         return tokenized_text, labels

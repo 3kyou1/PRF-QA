@@ -137,7 +137,7 @@ def configure_parser():
     parser.add_argument(
         "--model_name",
         help="token classification model",
-        default="/home/hang_su/microsoft/llmlingua-2-xlm-roberta-large-meetingbank",
+        default="base model",
     )
     parser.add_argument(
         "--data_path",

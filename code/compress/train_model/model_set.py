@@ -10,7 +10,7 @@ def configure_parser():
     parser.add_argument(
         "--model_name",
         help="Foundation Model",
-        default="/home/hang_su/FacebookAI/xlm-roberta-large/",
+        default="base model path",
     )
     parser.add_argument(
         "--pth_path",

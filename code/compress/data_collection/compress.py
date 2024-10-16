@@ -62,7 +62,7 @@ def configure_parser():
     parser.add_argument("--save_path", help="path to save results", required=True)
 
     parser.add_argument(
-    "--load_prompt_from", help="", default="/home/hang_su/per-agent/code/compress/data_collection/compression_instructions.json"
+    "--load_prompt_from", help="", default="../../../code/compress/data_collection/compression_instructions.json"
     )
 
     parser.add_argument(

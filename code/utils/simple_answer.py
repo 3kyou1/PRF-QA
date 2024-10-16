@@ -37,7 +37,7 @@ def simple_answer(dataset):
             json_file.write(json_string)
 
 if __name__ == '__main__':
-    dataset_list = ['allenai.json','shuishan.json','stackexchange.json']
+    dataset_list = ['wildchat.json','cs101.json','stackexchange.json']
     dataset_list = ['stackexchange.json']
     for dataset in dataset_list:
         simple_answer(dataset)

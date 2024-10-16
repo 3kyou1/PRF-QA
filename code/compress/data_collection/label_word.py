@@ -60,12 +60,12 @@ def configure_parser():
     parser.add_argument(
         "--load_prompt_from",
         help="where to load compressed prompt",
-        default="/home/hang_su/per-agent/code/compress/data_collection/results/stackexchange/qwen2/compression_cs512_stackexchange_train_formated.json",
+        default="../../../code/compress/data_collection/results/stackexchange/qwen2/compression_cs512_stackexchange_train_formated.json",
     )
     parser.add_argument(
         "--save_path",
         help="path to save results",
-        default="results/per-agent/qwen2/annotation_cs512_stackexchange_train_formated.json",
+        default="../results/qwen2/annotation_cs512_stackexchange_train_formated.json",
     )
     parser.add_argument("--window_size", help="window size", type=int, default=400)
     parser.add_argument(

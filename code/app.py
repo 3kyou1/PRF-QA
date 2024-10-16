@@ -162,9 +162,7 @@ if __name__ == '__main__':
     parser = configure_parser()
     args = parser.parse_args()
 
-    dataset_list = ['shuishan.json','allenai.json','stackexchange.json']
-    # dataset_list = ['shuishan.json']
-    # dataset_list = ['stackexchange.json']
+    dataset_list = ['cs101.json','wildchat.json','stackexchange.json']
     for dataset in dataset_list:
         language = ""
         if dataset =='shuishan.json':
