@@ -85,27 +85,13 @@ def eval(dataset_name,agent_model,model):
         
         pool = {'query_pool':query_pool,'profile_pool':profile_pool,'sim_pool':sim_pool,'per_pool':per_pool}
         
-        if (calculate_jaccard_similarity(query_pool,large_pool)-calculate_jaccard_similarity(query_pool,pool['per_pool'])>=0.01) and (calculate_jaccard_similarity(profile_pool,large_pool)-calculate_jaccard_similarity(profile_pool,pool['per_pool'])>=0.01):
-        # if (calculate_jaccard_similarity(query_pool,large_pool)-calculate_jaccard_similarity(query_pool,pool['per_pool'])>=0.03):
-        # if (calculate_jaccard_similarity(query_pool,large_pool)-calculate_jaccard_similarity(query_pool,pool['per_pool'])>=0.025):
-            # if id not in error_list:
-                print('---------------------------')
-                print(f"id:{id}")
-                print(f"large_query:{calculate_jaccard_similarity(query_pool,large_pool)}")
-                print(f"my_query:{calculate_jaccard_similarity(pool['query_pool'],pool['per_pool'])}")
-                print(f"large_profile:{calculate_jaccard_similarity(profile_pool,large_pool)}")
-                print(f"my_profile:{calculate_jaccard_similarity(profile_pool,pool['per_pool'])}")
-                cnt = cnt + 1 
+        
         
         jaccard['jaccard-sim-query'] = jaccard['jaccard-sim-query'] + calculate_jaccard_similarity(pool['query_pool'],pool['sim_pool'])
         jaccard['jaccard-per-query'] = jaccard['jaccard-per-query'] + calculate_jaccard_similarity(pool['query_pool'],pool['per_pool'])
         jaccard['jaccard-sim-profile'] = jaccard['jaccard-sim-profile'] + calculate_jaccard_similarity(pool['profile_pool'],pool['sim_pool'])
         jaccard['jaccard-per-profile'] = jaccard['jaccard-per-profile'] + calculate_jaccard_similarity(pool['profile_pool'],pool['per_pool'])
 
-        # ic['ic-sim-query'] = ic['ic-sim-query'] + calculate_inclusion_coefficient(pool['query_pool'],pool['sim_pool'])
-        # ic['ic-per-query'] = ic['ic-per-query'] + calculate_inclusion_coefficient(pool['query_pool'],pool['per_pool'])
-        # ic['ic-sim-profile'] = ic['ic-sim-profile'] + calculate_inclusion_coefficient(pool['profile_pool'],pool['sim_pool'])
-        # ic['ic-per-profile'] = ic['ic-per-profile'] + calculate_inclusion_coefficient(pool['profile_pool'],pool['per_pool'])
         ic['ic-sim-query'] = ic['ic-sim-query'] + calculate_inclusion_coefficient(pool['sim_pool'],pool['query_pool'])
         ic['ic-per-query'] = ic['ic-per-query'] + calculate_inclusion_coefficient(pool['per_pool'],pool['query_pool'])
         ic['ic-sim-profile'] = ic['ic-sim-profile'] + calculate_inclusion_coefficient(pool['sim_pool'],pool['profile_pool'])

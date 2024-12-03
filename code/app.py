@@ -165,7 +165,7 @@ if __name__ == '__main__':
     dataset_list = ['cs101.json','wildchat.json','stackexchange.json']
     for dataset in dataset_list:
         language = ""
-        if dataset =='shuishan.json':
+        if dataset =='cs101.json':
             language = "zh"
         else:
             language = "en"
