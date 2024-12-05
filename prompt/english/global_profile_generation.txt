@@ -1,7 +1,8 @@
-user profile:{user_profile}
+Domain profile:{domain_profile}
+Global profile:{global_profile}
 Please summarize the user profile based on the information about the user in various domains.
 Requirements:
-1. Please provide your output in JSON format, following this structure:
+1. Please response in JSON format, following this structure below:
    {{
      "profile": "A Summary of user profile" (starting with "This user"),
      "reasoning": "briefly explain your reasoning for the summarization"

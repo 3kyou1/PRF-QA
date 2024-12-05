@@ -246,7 +246,6 @@
     "K紧邻算法分类与回归\n"
   ],
   "44": [
-    "401 : Unauthorized\n未授权(1): 请从水杉在线进入本系统，授权后可直接输入域名访问。解决该问题的方法\n",
     "from sklearn import metrics\ndata.loc[data['class'] == 'setosa','class'] = 0\ndata.loc[data['class'] == 'versicolor','class'] = 1\ndata.loc[data['class'] == 'virginica','class'] = 2\ny= data['class']\nmetrics.adjusted_rand_score(y,kmeans.labels_)\n解释该代码",
     "兰德系数是什么",
     "Classification metrics can't handle a mix of unknown and multiclass targets\n报错原因及解决方案",
@@ -362,7 +361,6 @@
     "学生如何学习编程思维呢？",
     "我在python里是什么水平？\n",
     "那你怎么样才能评估我的PYTHON水平呢？我需要提供什么材料给你吗？\n",
-    "我是一个菜鸟，请给我推荐几个水杉在线平台上的课程吧\n",
     "我是个编程菜鸟，请推荐一些编程的课程\n"
   ],
   "116": [

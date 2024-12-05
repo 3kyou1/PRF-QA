@@ -1,7 +1,7 @@
-query:{query}
-You are an expert in {domain}. Please tell me the profile the user who asked the query in {domain}.
+question:{query}
+You are an expert in {domain}. Please tell me a profile the user who asked the question in {domain}.
 Requirements:
-1. Please provide your summary in JSON format, following this structure:
+1. Please response in JSON format, following this structure below:
    {{
      "profile": "A Summary of the user's profile in this domain"(starting with "This user"),
      "reasoning": "briefly explain your reasoning for the summarization"
