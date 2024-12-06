@@ -1,4 +1,4 @@
-query:{query}
+question:{query}
 answer:{answer}
 Please evaluate whether the answer is comprehensive using a three-point rating scale.
 Requirements:

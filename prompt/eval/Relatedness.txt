@@ -1,4 +1,4 @@
-query:{query}
+question:{query}
 user profile:{user_profile}
 answer:{answer}
 Please evaluate the answer from the dimension of relevance using a three-point rating scale. 
