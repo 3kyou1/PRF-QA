@@ -1,1 +1,5 @@
-# PRF-QA
+<h2 align="center"> Personalized Question Answering with User Profile Generation and Compression </h2>
+
+
+
+This work explores the novel and convenient avenue offered by large language models (LLMs) for humans to acquire knowledge. However, LLMs are prone to providing "midguy" answers regardless of users' knowledge backgrounds, thereby failing to meet each user's personalized needs. To tackle this problem, we propose generating personalized answers with LLMs based on users' past question-answering records. We dynamically generate and update a user's profiles in specific and all domains as the user asks questions, using the latest profiles as the context to prompt LLMs when answering new questions. Additionally, we propose compressing the domain profile of a user into a set of keywords to reduce token consumption when prompting LLMs. Experimental results show that our method generates more personalized answers than comparative and ablation methods. We have deployed this approach for personalized question-answering in our university's learning platform.
