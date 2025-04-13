@@ -2,4 +2,25 @@
 
 
 
-This work explores the novel and convenient avenue offered by large language models (LLMs) for humans to acquire knowledge. However, LLMs are prone to providing "midguy" answers regardless of users' knowledge backgrounds, thereby failing to meet each user's personalized needs. To tackle this problem, we propose generating personalized answers with LLMs based on users' past question-answering records. We dynamically generate and update a user's profiles in specific and all domains as the user asks questions, using the latest profiles as the context to prompt LLMs when answering new questions. Additionally, we propose compressing the domain profile of a user into a set of keywords to reduce token consumption when prompting LLMs. Experimental results show that our method generates more personalized answers than comparative and ablation methods. We have deployed this approach for personalized question-answering in our university's learning platform.
+This work enhances LLM personalization by dynamically generating user profiles from question-answering history. Our method updates domain-specific and general user profiles in real-time, compressing them into keywords for efficient LLM prompting. Experiments show superior personalization over baselines, with successful deployment in a university learning platform.
+
+
+<p align="center">
+  <embed src="./assets/model.pdf" width="95%" height="600px" type="application/pdf">
+</p>
+
+## Evaluation
+<p align="center">
+  <img src="./assets/main_results.png" width="90%" alt="main_results">
+</p>
+
+
+
+## Todo
+
+- [ ] Add detailed instructions for quick start
+- [ ] Add shell scripts for evaluation
+
+## Released Data 
+Please refer to `dataset` for the released data a
+
