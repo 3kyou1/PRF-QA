@@ -6,12 +6,12 @@ This work enhances LLM personalization by dynamically generating user profiles f
 
 
 <p align="center">
-  <embed src="./assets/model.pdf" width="95%" height="600px" type="application/pdf">
+  <img src="./assets/model.png" width="90%" alt="model">
 </p>
 
 ## Evaluation
 <p align="center">
-  <img src="./assets/main_results.png" width="90%" alt="main_results">
+  <img src="./assets/main_result.png" width="90%" alt="main_result">
 </p>
 
 
