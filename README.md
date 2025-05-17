@@ -4,10 +4,10 @@
 
 This work enhances LLM personalization by dynamically generating user profiles from question-answering history. Our method updates domain-specific and general user profiles in real-time, compressing them into keywords for efficient LLM prompting. Experiments show superior personalization over baselines, with successful deployment in a university learning platform.
 
-
 <p align="center">
-  <img src="./assets/model.png" width="90%" alt="model">
+  <img src="./assets/Model.png" width="90%" alt="model">
 </p>
+
 
 ## Evaluation
 <p align="center">
@@ -22,5 +22,5 @@ This work enhances LLM personalization by dynamically generating user profiles f
 - [ ] Add shell scripts for evaluation
 
 ## Released Data 
-Please refer to `dataset` for the released data a
+Please refer to `dataset` for the released data.
 
