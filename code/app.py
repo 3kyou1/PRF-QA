@@ -152,9 +152,9 @@ def configure_parser():
 
     parser.add_argument('--compress_model', type=str, default='',
                         help='compress_model')
-    parser.add_argument('--cuda_device', type=str, default='cuda:2',
+    parser.add_argument('--cuda_device', type=str, default='',
                         help='GPU device')
-    parser.add_argument('--dataset', type=str, default='allenai.json',
+    parser.add_argument('--dataset', type=str, default='',
                         help='datset')
     return parser
 
