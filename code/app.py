@@ -150,7 +150,7 @@ def evaluate():
 def configure_parser():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--compress_model', type=str, default='/home/hang_su/per-agent/model/xlm-roberta-large-stackexchange',
+    parser.add_argument('--compress_model', type=str, default='',
                         help='compress_model')
     parser.add_argument('--cuda_device', type=str, default='cuda:2',
                         help='GPU device')
